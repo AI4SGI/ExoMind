@@ -34,12 +34,19 @@
     />
     <title>ExoMind: Democratizing Scientific Intelligence</title>
     <script>document.documentElement.classList.add("js");</script>
-    <link rel="stylesheet" href="styles.css?v=20260717-01" />
+    <link rel="stylesheet" href="styles.css?v=20260721-01" />
   </head>
   <body>
     <header class="site-header">
       <div class="nav-shell">
-        <a class="brand" href="#top" aria-label="ExoMind home">ExoMind</a>
+        <a class="brand" href="#top" aria-label="ExoMind home">
+          <img
+            src="assets/exomind-wordmark.png"
+            alt="ExoMind"
+            width="2305"
+            height="470"
+          />
+        </a>
         <nav class="nav-links" aria-label="Primary navigation">
           <a href="#overview">Overview</a>
           <a href="#approach">Approach</a>
@@ -76,9 +83,14 @@
             systematic training strategy to advance scientific reasoning and research.
           </p>
           <div class="resource-links" aria-label="Release availability">
-            <span class="resource-link" aria-disabled="true">
-              <span>Technical Report</span><small>Coming soon</small>
-            </span>
+            <a
+              class="resource-link"
+              href="https://github.com/AI4SGI/ExoMind/blob/main/Paper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Technical Report</span><small>PDF &nearr;</small>
+            </a>
             <a
               class="resource-link"
               href="https://github.com/AI4SGI/ExoMind"
@@ -1112,12 +1124,12 @@ inner.subs({m: 2, D: 2})  # 0</code></pre>
           <div class="section-copy reveal">
             <h2 id="citation-title">Citation</h2>
             <p class="section-lead">
-              Use this provisional citation while the technical report is forthcoming.
+              Please cite the ExoMind technical report using the following entry.
             </p>
           </div>
           <div class="citation-block reveal">
             <div class="citation-toolbar">
-              <span>Provisional BibTeX</span>
+              <span>BibTeX</span>
               <button
                 id="copy-citation"
                 type="button"
@@ -1129,9 +1141,10 @@ inner.subs({m: 2, D: 2})  # 0</code></pre>
             </div>
             <pre id="citation-bibtex"><code>@misc{exomind2026,
   title  = {ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System},
-  author = {{ExoMind Team}},
+  author = {Peng Ye and Zhuo Liu and Jingqi Ye and Fangchen Yu and Shengji Tang and Yichen Jiang and Haonan He and Tao Chen and Shuyue Hu and Bo Zhang and Bowen Zhou and Wanli Ouyang and Lei Bai},
   year   = {2026},
-  note   = {Technical report, forthcoming}
+  note   = {Technical report},
+  url    = {https://github.com/AI4SGI/ExoMind/blob/main/Paper.pdf}
 }</code></pre>
           </div>
         </section>

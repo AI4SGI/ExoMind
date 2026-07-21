@@ -127,22 +127,16 @@ h3 {
 }
 
 .brand {
+  display: inline-flex;
   flex: 0 0 auto;
-  color: var(--ink);
-  font-size: 17px;
-  font-weight: 800;
-  line-height: 1;
+  align-items: center;
   text-decoration: none;
 }
 
-.brand::before {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin-right: 9px;
-  border-radius: 2px;
-  background: var(--red);
-  content: "";
+.brand img {
+  display: block;
+  width: auto;
+  height: 30px;
 }
 
 .nav-links {
@@ -2604,20 +2598,29 @@ figcaption {
 }
 
 @media (max-width: 480px) {
-  .brand {
-    font-size: 15px;
+  .nav-shell {
+    gap: 10px;
+  }
+
+  .brand img {
+    width: 118px;
+    height: auto;
   }
 
   .nav-links {
-    gap: 14px;
+    gap: 10px;
   }
 
   .nav-links a + a {
-    margin-left: 14px;
+    margin-left: 10px;
   }
 
   .nav-links a:first-child {
     display: none;
+  }
+
+  .nav-links a {
+    font-size: 12px;
   }
 
   h1 {
@@ -2661,6 +2664,28 @@ figcaption {
   .ranking-score {
     width: 38px;
     flex-basis: 38px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-shell {
+    gap: 7px;
+  }
+
+  .brand img {
+    width: 100px;
+  }
+
+  .nav-links {
+    gap: 7px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .nav-links a + a {
+    margin-left: 7px;
   }
 }
 

@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./ExoMind.png" alt="ExoMind" width="760">
+
 <h1>ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System</h1>
 
 <p><strong>Frontier-level scientific reasoning and research at 35B scale through data- and compute-efficient specialization</strong></p>
@@ -10,7 +12,9 @@
   <a href="https://ai4sgi.github.io/ExoMind/">
     <img src="https://img.shields.io/badge/Project_Page-Visit-1f6feb?style=flat-square&logo=googlechrome&logoColor=white" alt="Project Page">
   </a>
-  <img src="https://img.shields.io/badge/Technical_Report-Coming_Soon-b0b0b0?style=flat-square" alt="Technical Report Coming Soon">
+  <a href="./Paper.pdf">
+    <img src="https://img.shields.io/badge/Technical_Report-PDF-E34F26?style=flat-square&logo=adobeacrobatreader&logoColor=white" alt="Technical Report PDF">
+  </a>
   <img src="https://img.shields.io/badge/Hugging_Face-Coming_Soon-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="Hugging Face Coming Soon">
   <img src="https://img.shields.io/badge/ModelScope-Coming_Soon-624AFF?style=flat-square" alt="ModelScope Coming Soon">
 </p>
@@ -19,11 +23,12 @@
 
 ## News
 
-- **2026-07-21:** We release the official ExoMind project page and public repository.
+- **2026-07-21:** We release the ExoMind technical report, official project page,
+  and public repository.
 
 > [!NOTE]
-> This initial release contains the official project website. The technical report,
-> model weights, data, and training and inference code are forthcoming.
+> This initial release contains the technical report and official project website.
+> Model weights, data, and training and inference code are forthcoming.
 
 ## Overview
 
@@ -89,101 +94,78 @@ first-class components of the intelligence system.
 | **Scientific interaction framework** | Instantiates Web Search, Google Scholar, Browser, and Code Executor as typed interaction objects under a shared action–observation contract, with outcome-, rule-, and process-level trajectory verification. |
 | **Systematic training strategy** | Enforces train–inference consistency and applies hybrid progressive CoI training. Full-parameter SFT uses a few thousand high-quality trajectories and runs on 8 NVIDIA H200 GPUs for approximately one to two days. |
 
+<details>
+<summary><strong>Systematic scientific data engineering</strong></summary>
+
+<p align="center">
+  <a href="https://ai4sgi.github.io/ExoMind/#approach">
+    <img src="./docs/assets/fig3-data-pipeline.png" alt="ExoMind systematic data engineering pipeline" width="94%">
+  </a>
+</p>
+
+</details>
+
+<details>
+<summary><strong>Deeply specialized scientific interaction</strong></summary>
+
 <p align="center">
   <a href="https://ai4sgi.github.io/ExoMind/#approach">
     <img src="./docs/assets/fig4-interaction-framework.png" alt="ExoMind scientific interaction framework" width="96%">
   </a>
 </p>
 
-<details>
-<summary><strong>Systematic scientific data engineering</strong></summary>
-
-<p align="center">
-  <img src="./docs/assets/fig3-data-pipeline.png" alt="ExoMind systematic data engineering pipeline" width="94%">
-</p>
-
 </details>
 
 <details>
-<summary><strong>Train–inference-aligned progressive training</strong></summary>
+<summary><strong>Systematic training strategy</strong></summary>
 
 <p align="center">
-  <img src="./docs/assets/fig5-training-paradigm.png" alt="ExoMind hybrid progressive Chain-of-Interaction training" width="94%">
+  <a href="https://ai4sgi.github.io/ExoMind/#approach">
+    <img src="./docs/assets/fig5-training-paradigm.png" alt="ExoMind hybrid progressive Chain-of-Interaction training" width="94%">
+  </a>
 </p>
 
 </details>
 
 ## Performance
 
-Among the compared models, ExoMind achieves the highest average score,
-**67.5**, across eight scientific benchmarks and ranks first on **6 of 8**
-benchmarks. Its average rises from **36.2 to 67.5** over the
-Qwen3.5-35B-A3B base model.
+<p align="center">
+  <a href="https://ai4sgi.github.io/ExoMind/#results">
+    <img src="./docs/assets/fig8-benchmarks.png" alt="ExoMind performance across eight scientific benchmarks" width="94%">
+  </a>
+</p>
 
-### Scientific reasoning and research
-
-| Benchmark | Base | ExoMind | Gain vs. Base |
-| --- | ---: | ---: | ---: |
-| HLE w/ tools | 47.4 | **50.9** | +3.5 |
-| FrontierScience-Research | 2.5 | **70.0** | +67.5 |
-| CMT-Benchmark | 20.0 | **84.0** | +64.0 |
-| CritPt | 0.9 | **26.0** | +25.1 |
-| AMO-Bench | 46.0 | **78.0** | +32.0 |
-| IMO-AnswerBench | 71.0 | **92.8** | +21.8 |
-| HiPhO | 37.0 | **49.7** | +12.7 |
-| FrontierScience-Olympiad | 64.5 | **89.0** | +24.5 |
-
-### General capabilities
-
-| Benchmark | Base | ExoMind | Gain vs. Base |
-| --- | ---: | ---: | ---: |
-| MMLU-Pro | 85.3 | **94.5** | +9.2 |
-| GPQA-Diamond | 84.2 | **95.0** | +10.8 |
-| MedMCQA | 79.5 | **93.9** | +14.4 |
-| xbench | 77.0 | **84.0** | +7.0 |
-| τ²-Bench | 32.5 | **74.8** | +42.3 |
-| LiveCodeBench | 74.6 | **85.7** | +11.1 |
-
-For complete model comparisons, benchmark scope, and interactive rankings, see
-the [project-page evaluation explorer](https://ai4sgi.github.io/ExoMind/#results).
-
-## Emergent Scientific Interaction Patterns
-
-After training, ExoMind composes a finite set of interaction objects into
-scientific behaviors that adapt to the evolving reasoning state:
-
-- **Verification-seeking:** Uses executable feedback to inspect fragile
-  derivations, identify inconsistencies, and revise subsequent reasoning.
-- **Evidence-seeking:** Moves from source discovery to primary-source grounding
-  and incorporates retrieved evidence into the reasoning process.
-- **Hybrid closed loop:** Alternates between literature evidence and executable
-  mathematical or numerical checks so that the two constrain each other.
-
-Explore the complete trajectories on the
-[project page](https://ai4sgi.github.io/ExoMind/#cases-title).
+See the [project-page evaluation explorer](https://ai4sgi.github.io/ExoMind/#results)
+for complete model comparisons, benchmark scope, and interactive rankings.
 
 ## Release Status
 
 | Resource | Status |
 | --- | --- |
 | [Project page](https://ai4sgi.github.io/ExoMind/) | Available |
-| Technical report | Coming soon |
+| [Technical report](./Paper.pdf) | Available |
 | Model weights | Coming soon |
 | Data | Coming soon |
 | Training and inference code | Coming soon |
 
 ## Repository Layout
 
-The current release contains the static project website:
+The current release contains the technical report, project metadata, brand
+assets, and static project website:
 
 ```text
-docs/
-├── index.html
-├── styles.css
-├── script.js
-├── benchmark-data.js
-├── performance-data.js
-└── assets/
+.
+├── README.md
+├── Paper.pdf
+├── ExoMind.png
+├── CITATION.cff
+└── docs/
+    ├── index.html
+    ├── styles.css
+    ├── script.js
+    ├── benchmark-data.js
+    ├── performance-data.js
+    └── assets/
 ```
 
 The website is published with GitHub Pages from the `docs/` directory on the
@@ -191,15 +173,15 @@ The website is published with GitHub Pages from the `docs/` directory on the
 
 ## Citation
 
-Please use the following provisional citation until the technical report is
-available:
+Please cite the ExoMind technical report as follows:
 
 ```bibtex
 @misc{exomind2026,
   title  = {ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System},
-  author = {{ExoMind Team}},
+  author = {Peng Ye and Zhuo Liu and Jingqi Ye and Fangchen Yu and Shengji Tang and Yichen Jiang and Haonan He and Tao Chen and Shuyue Hu and Bo Zhang and Bowen Zhou and Wanli Ouyang and Lei Bai},
   year   = {2026},
-  note   = {Technical report, forthcoming}
+  note   = {Technical report},
+  url    = {https://github.com/AI4SGI/ExoMind/blob/main/Paper.pdf}
 }
 ```
 
