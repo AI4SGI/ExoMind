@@ -31,6 +31,7 @@ authors:
 date-released: 2026-07-21
 repository-code: "https://github.com/AI4SGI/ExoMind"
 url: "https://ai4sgi.github.io/ExoMind/"
+license: "Apache-2.0"
 abstract: >-
   ExoMind is an extended-mind-inspired agentic system for scientific reasoning
   and research.

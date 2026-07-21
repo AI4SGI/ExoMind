@@ -247,7 +247,7 @@
     const nextButton = document.querySelector("#benchmark-next");
     const data = window.EXOMIND_BENCHMARK_DATA;
     const providerIcons = {
-      Ours: { src: "assets/providers/exomind.png", label: "ExoMind" },
+      Ours: { src: "assets/exomind-avatar.png", label: "ExoMind" },
       OpenAI: { src: "assets/providers/openai.png", label: "OpenAI" },
       Google: { src: "assets/providers/google.png", label: "Google" },
       Gemma: { src: "assets/providers/google.png", label: "Google" },

@@ -15,6 +15,9 @@
   <a href="./Paper.pdf">
     <img src="https://img.shields.io/badge/Technical_Report-PDF-E34F26?style=flat-square&logo=adobeacrobatreader&logoColor=white" alt="Technical Report PDF">
   </a>
+  <a href="./LICENSE">
+    <img src="https://img.shields.io/badge/License-Apache--2.0-f5de53?style=flat-square" alt="License: Apache-2.0">
+  </a>
   <img src="https://img.shields.io/badge/Hugging_Face-Coming_Soon-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="Hugging Face Coming Soon">
   <img src="https://img.shields.io/badge/ModelScope-Coming_Soon-624AFF?style=flat-square" alt="ModelScope Coming Soon">
 </p>
@@ -167,6 +170,6 @@ Please cite the ExoMind technical report as follows:
 
 ## License
 
-License terms are under institutional review. A `LICENSE` file will be added
-after the review is complete. Until then, no open-source license is granted for
-the materials in this repository.
+This repository is licensed under the [Apache License 2.0](./LICENSE).
+Third-party names, logos, and trademarks remain the property of their respective
+rights holders; see [NOTICE.md](./NOTICE.md) for details.

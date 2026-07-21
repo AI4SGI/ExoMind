@@ -1,9 +1,20 @@
 # Notices
 
-This repository contains project-page materials for ExoMind, including research figures, institutional identifiers, and names or logos associated with third-party models and services.
+Unless otherwise stated, original materials in this repository are made available
+under the Apache License, Version 2.0. Consistent with Section 6 of the License,
+the License does not grant permission to use the Licensor's trade names,
+trademarks, service marks, or product names, except as required for reasonable
+and customary use in describing the origin of the Work and reproducing the
+content of this NOTICE file.
 
-- The Shanghai Artificial Intelligence Laboratory name and logo belong to their respective rights holder.
-- Third-party names, product names, and logos belong to their respective rights holders and are used only for identification and research-result presentation. Their appearance does not imply endorsement.
-- ExoMind figures and evaluation materials may be subject to separate publication or institutional terms.
+- The ExoMind and Shanghai Artificial Intelligence Laboratory names and logos may
+  be protected by trademark and related laws.
+- Third-party names, product names, and logos belong to their respective rights
+  holders and are used only for identification and research-result presentation.
+- The appearance of any name or logo does not imply endorsement by its rights
+  holder.
 
-License terms for this repository are under institutional review. No permission beyond rights provided by applicable law is granted until a `LICENSE` file is published.
+No rights in third-party trademarks or logo artwork are granted by this
+distribution.
+
+See the repository's `LICENSE` file for the complete license terms.
