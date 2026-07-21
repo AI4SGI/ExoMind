@@ -4,7 +4,7 @@
 
 <h1>ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System</h1>
 
-<p><strong>Frontier-level scientific reasoning and research at 35B scale through data- and compute-efficient specialization</strong></p>
+<p><strong>Surpassing Frontier Proprietary Models in Scientific Reasoning and Research<br>with Less Data, Small Model, and Low-cost Training</strong></p>
 
 <p><strong>ExoMind Team · Shanghai Artificial Intelligence Laboratory</strong></p>
 
@@ -21,9 +21,9 @@
 
 </div>
 
-## News
+## 🔥 News
 
-- **2026-07-21:** We release the ExoMind technical report, official project page,
+- **2026-07-21**: 🔥 We release the ExoMind technical report, official project page,
   and public repository.
 
 > [!NOTE]
@@ -32,16 +32,16 @@
 
 ## Overview
 
-**ExoMind** is an extended-mind-inspired agentic system for scientific reasoning
-and research. Rather than treating scientific specialization solely as parameter
-adaptation, ExoMind organizes an LLM, typed scientific interaction objects, and
-autonomous interaction processes as a unified intelligence system.
+**ExoMind** is the first extended-mind-inspired agentic system designed for
+scientific domains. It integrates a systematic data engineering pipeline, a
+scientific interaction framework, and a systematic training strategy to enable
+deep specialization at low cost.
 
-ExoMind connects three components: systematic scientific data engineering,
-deeply specialized scientific interaction, and train–inference-aligned progressive
-training. Built on Qwen3.5-35B-A3B, it raises the average score across eight
-scientific benchmarks from **36.2 to 67.5**, while improving over the base model
-on all six evaluated general-capability benchmarks.
+Built on Qwen3.5-35B-A3B, ExoMind achieves substantial and consistent
+improvements across scientific reasoning and research tasks using less data, a
+small model, and low-cost training. Its average score across eight scientific
+benchmarks increases from **36.2 to 67.5**, while it also improves over the base
+model on all six evaluated general-capability benchmarks.
 
 <p align="center">
   <a href="https://ai4sgi.github.io/ExoMind/#results">
@@ -53,23 +53,33 @@ on all six evaluated general-capability benchmarks.
 
 ## Highlights
 
-- **Extended-mind-inspired scientific intelligence:** Treats the model,
-  interaction objects, and autonomous interaction process as one agentic system.
-- **Systematic scientific data engineering:** Predicts problem difficulty and
-  interaction value before rollout, then filters and routes examples into
-  reasoning and interaction trajectories.
-- **Typed scientific interaction:** Grounds source discovery, source grounding,
-  executable verification, and observation integration in a unified
-  action–observation interface.
-- **Progressive Chain-of-Interaction training:** Aligns training and inference
-  protocols and progressively develops intrinsic reasoning, basic tool use, and
-  high-quality closed-loop interaction patterns.
+- **Extended-mind-inspired scientific intelligence:** Organizes an LLM,
+  interaction objects, and autonomous interaction processes as a unified agentic
+  system, enabling deep specialization, new scaling dimensions, and stronger
+  representational capacity.
+- **Training-value-aware data engineering:** Predicts problem difficulty and
+  interaction benefit before trajectory generation, then performs quality
+  filtering, difficulty selection, and capability routing.
+- **Deeply specialized scientific interaction:** Abstracts source discovery,
+  source grounding, executable verification, and observation integration into
+  typed interaction objects under a unified action–observation contract, and
+  distills verifiable Chain-of-Interaction trajectories.
+- **Systematic progressive training:** Enforces training–inference consistency
+  and progressively develops intrinsic reasoning and autonomous interaction
+  through two-stage hybrid CoI training.
+- **Low-cost frontier performance:** Using Qwen3.5-35B-A3B, a few thousand
+  high-quality trajectories, and 1–2 days of full-parameter SFT on 8 NVIDIA H200
+  GPUs, ExoMind attains the strongest average performance across eight evaluated
+  scientific benchmarks and improves all six general-capability benchmarks over
+  the base model.
 
 ## Intelligence Beyond a Single LLM
 
-ExoMind expands scientific specialization beyond a model's internal parameters.
-It treats external interaction objects and long-horizon interaction processes as
-first-class components of the intelligence system.
+Rather than relying solely on the internal parameters and intrinsic capabilities
+of a single LLM, ExoMind organizes intelligence as an agentic system composed of
+an LLM, interaction objects, and autonomous interaction processes. Through
+long-horizon autonomous interactions with diverse objects, this system develops
+capabilities that extend beyond the boundaries of an individual LLM.
 
 <p align="center">
   <a href="https://ai4sgi.github.io/ExoMind/#overview">
@@ -77,25 +87,28 @@ first-class components of the intelligence system.
   </a>
 </p>
 
-- **Deep specialization:** Shift specialization from parameter adaptation alone
-  toward interaction objects tailored to scientific operations and domains.
-- **New scaling dimensions:** Expand capability through richer interaction
-  objects and deeper autonomous interaction, beyond model size, data volume,
+- **Deep specialization:** Shifts the focus of specialization from modifying LLM
+  parameters alone to designing external interaction objects tailored to
+  different scientific tasks and domains.
+- **New scaling dimensions:** Expands capability through richer interaction
+  objects and deeper autonomous interactions, beyond model size, data volume,
   and training time.
-- **Stronger system capacity:** Organize the model, external objects, and
-  interaction process as a system that can represent diverse, fine-grained, and
-  long-horizon scientific work.
+- **Stronger representational capacity:** Better captures the diverse,
+  fine-grained, and long-horizon characteristics of scientific processes.
 
 ## Building ExoMind
 
+The construction of ExoMind follows three stages: a systematic data engineering
+pipeline, a scientific interaction framework, and a systematic training strategy.
+
 | Component | Role |
 | --- | --- |
-| **Systematic data engineering** | Predicts problem difficulty and tool benefit before rollout, progressively filters a roughly 60K multidisciplinary pool into about 30K high-value questions, and routes them to pure-reasoning or interaction-reasoning paths. |
-| **Scientific interaction framework** | Instantiates Web Search, Google Scholar, Browser, and Code Executor as typed interaction objects under a shared action–observation contract, with outcome-, rule-, and process-level trajectory verification. |
-| **Systematic training strategy** | Enforces train–inference consistency and applies hybrid progressive CoI training. Full-parameter SFT uses a few thousand high-quality trajectories and runs on 8 NVIDIA H200 GPUs for approximately one to two days. |
+| **Systematic Data Engineering Pipeline** | Builds a roughly 60K multidisciplinary scientific problem–answer pool, predicts problem difficulty and interaction benefit before trajectory generation, applies quality filtering and difficulty selection to retain around 30K challenging problems, and then routes them to pure- or interaction-reasoning trajectories. |
+| **Scientific Interaction Framework** | Abstracts source discovery, source grounding, executable verification, and observation integration as atomic capabilities, then instantiates Web Search, Google Scholar, Browser, and Code Executor as typed interaction objects under a unified action–observation contract; CoI distillation and multilevel trajectory verification produce high-quality interaction trajectories. |
+| **Systematic Training Strategy** | Applies a training–inference consistency constraint and two-stage hybrid progressive CoI training: Stage 1 jointly develops intrinsic reasoning and basic interaction capability, while Stage 2 further strengthens interaction reasoning with higher-quality interaction trajectories. |
 
 <details>
-<summary><strong>Systematic scientific data engineering</strong></summary>
+<summary><strong>Systematic Data Engineering Pipeline</strong></summary>
 
 <p align="center">
   <a href="https://ai4sgi.github.io/ExoMind/#approach">
@@ -106,7 +119,7 @@ first-class components of the intelligence system.
 </details>
 
 <details>
-<summary><strong>Deeply specialized scientific interaction</strong></summary>
+<summary><strong>Scientific Interaction Framework</strong></summary>
 
 <p align="center">
   <a href="https://ai4sgi.github.io/ExoMind/#approach">
@@ -117,7 +130,7 @@ first-class components of the intelligence system.
 </details>
 
 <details>
-<summary><strong>Systematic training strategy</strong></summary>
+<summary><strong>Systematic Training Strategy</strong></summary>
 
 <p align="center">
   <a href="https://ai4sgi.github.io/ExoMind/#approach">
@@ -137,16 +150,6 @@ first-class components of the intelligence system.
 
 See the [project-page evaluation explorer](https://ai4sgi.github.io/ExoMind/#results)
 for complete model comparisons, benchmark scope, and interactive rankings.
-
-## Release Status
-
-| Resource | Status |
-| --- | --- |
-| [Project page](https://ai4sgi.github.io/ExoMind/) | Available |
-| [Technical report](./Paper.pdf) | Available |
-| Model weights | Coming soon |
-| Data | Coming soon |
-| Training and inference code | Coming soon |
 
 ## Citation
 
