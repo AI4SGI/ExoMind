@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./ExoMind.png" alt="ExoMind" width="760">
+<img src="./ExoMind.png" alt="ExoMind" width="560">
 
 <h1>ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System</h1>
 
@@ -131,7 +131,7 @@ first-class components of the intelligence system.
 
 <p align="center">
   <a href="https://ai4sgi.github.io/ExoMind/#results">
-    <img src="./docs/assets/fig8-benchmarks.png" alt="ExoMind performance across eight scientific benchmarks" width="94%">
+    <img src="./docs/assets/fig8-benchmarks.png" alt="ExoMind performance across eight scientific benchmarks" width="100%">
   </a>
 </p>
 
@@ -147,29 +147,6 @@ for complete model comparisons, benchmark scope, and interactive rankings.
 | Model weights | Coming soon |
 | Data | Coming soon |
 | Training and inference code | Coming soon |
-
-## Repository Layout
-
-The current release contains the technical report, project metadata, brand
-assets, and static project website:
-
-```text
-.
-├── README.md
-├── Paper.pdf
-├── ExoMind.png
-├── CITATION.cff
-└── docs/
-    ├── index.html
-    ├── styles.css
-    ├── script.js
-    ├── benchmark-data.js
-    ├── performance-data.js
-    └── assets/
-```
-
-The website is published with GitHub Pages from the `docs/` directory on the
-`main` branch.
 
 ## Citation
 
