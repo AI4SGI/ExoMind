@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/Technical_Report-PDF-E34F26?style=flat-square&logo=adobeacrobatreader&logoColor=white" alt="Technical Report PDF">
   </a>
   <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/License-Apache--2.0-f5de53?style=flat-square" alt="License: Apache-2.0">
+    <img src="https://img.shields.io/badge/Code_License-Apache--2.0-f5de53?style=flat-square" alt="Code License: Apache-2.0">
   </a>
   <img src="https://img.shields.io/badge/Hugging_Face-Coming_Soon-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="Hugging Face Coming Soon">
   <img src="https://img.shields.io/badge/ModelScope-Coming_Soon-624AFF?style=flat-square" alt="ModelScope Coming Soon">
@@ -170,6 +170,16 @@ Please cite the ExoMind technical report as follows:
 
 ## License
 
-This repository is licensed under the [Apache License 2.0](./LICENSE).
-Third-party names, logos, and trademarks remain the property of their respective
-rights holders; see [NOTICE.md](./NOTICE.md) for details.
+ExoMind uses a split-license structure:
+
+- Software files expressly identified in the licensing overview are licensed
+  under the [Apache License 2.0](./LICENSES/Apache-2.0.txt).
+- The technical report, paper content, scientific figures and results, and
+  ExoMind brand assets are **not** licensed under Apache-2.0. They are subject to
+  the [ExoMind Research Content and Brand Terms](./CONTENT_RIGHTS.md), which
+  permit limited attributed, noncommercial sharing and promotion while
+  reserving manuscript and brand rights.
+- Third-party materials remain subject to their respective owners' terms; see
+  [NOTICE.md](./NOTICE.md).
+
+See the repository's [licensing overview](./LICENSE) for the exact scope.
