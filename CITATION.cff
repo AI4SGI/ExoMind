@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use ExoMind in your work, please cite the project using the metadata below."
+title: "ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System"
+authors:
+  - name: "ExoMind Team"
+date-released: 2026-07-21
+repository-code: "https://github.com/AI4SGI/ExoMind"
+url: "https://ai4sgi.github.io/ExoMind/"
+abstract: >-
+  ExoMind is an extended-mind-inspired agentic system for scientific reasoning
+  and research.

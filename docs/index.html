@@ -1,0 +1,1164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="ExoMind democratizes scientific intelligence through an extended-mind-inspired agentic system."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://ai4sgi.github.io/ExoMind/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ExoMind: Democratizing Scientific Intelligence" />
+    <meta
+      property="og:description"
+      content="Surpassing frontier proprietary models in scientific reasoning and research with less data, small model, and low-cost training."
+    />
+    <meta property="og:url" content="https://ai4sgi.github.io/ExoMind/" />
+    <meta
+      property="og:image"
+      content="https://ai4sgi.github.io/ExoMind/assets/fig1-benchmark.png"
+    />
+    <meta property="og:image:width" content="3988" />
+    <meta property="og:image:height" content="1858" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ExoMind: Democratizing Scientific Intelligence" />
+    <meta
+      name="twitter:description"
+      content="An extended-mind-inspired agentic system for scientific reasoning and research."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ai4sgi.github.io/ExoMind/assets/fig1-benchmark.png"
+    />
+    <title>ExoMind: Democratizing Scientific Intelligence</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="styles.css?v=20260717-01" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="ExoMind home">ExoMind</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#overview">Overview</a>
+          <a href="#approach">Approach</a>
+          <a href="#results">Results</a>
+          <a href="#evaluation">Evaluation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <h1 id="hero-title">
+            <span>ExoMind:</span> Democratizing Scientific Intelligence via
+            Extended-Mind-Inspired Agentic System
+          </h1>
+          <p class="subtitle">
+            Surpassing Frontier Proprietary Models in Scientific Reasoning and Research
+            with Less Data, Small Model, and Low-cost Training
+          </p>
+          <div class="team-line" aria-label="ExoMind team and affiliation">
+            <strong>ExoMind Team</strong>
+            <span class="team-divider" aria-hidden="true"></span>
+            <img
+              src="assets/shanghai-ai-lab-logo-solid.png"
+              alt="Shanghai Artificial Intelligence Laboratory"
+              width="1517"
+              height="211"
+            />
+          </div>
+          <p class="hero-intro">
+            ExoMind is the first extended-mind-inspired agentic system, integrating
+            systematic data engineering, a scientific interaction framework, and a
+            systematic training strategy to advance scientific reasoning and research.
+          </p>
+          <div class="resource-links" aria-label="Release availability">
+            <span class="resource-link" aria-disabled="true">
+              <span>Technical Report</span><small>Coming soon</small>
+            </span>
+            <a
+              class="resource-link"
+              href="https://github.com/AI4SGI/ExoMind"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>GitHub</span><small>Repository &nearr;</small>
+            </a>
+            <span class="resource-link" aria-disabled="true">
+              <span>Hugging Face</span><small>Coming soon</small>
+            </span>
+            <span class="resource-link" aria-disabled="true">
+              <span>ModelScope</span><small>Coming soon</small>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="result-spotlight reveal" aria-labelledby="result-spotlight-title">
+        <div class="result-spotlight-inner">
+          <div class="spotlight-heading">
+            <h2 id="result-spotlight-title">Frontier-level scientific intelligence at 35B scale</h2>
+            <p class="section-lead">
+              ExoMind consistently improves over the base model on all eight datasets and
+              surpasses leading open and closed-source models on most of them, achieving
+              frontier-level scientific intelligence at 35B scale with roughly 277&times; fewer
+              parameters than GPT-5.5.
+            </p>
+          </div>
+
+          <div class="result-metrics" aria-label="ExoMind efficiency highlights">
+            <article class="result-metric">
+              <strong>+14.5</strong>
+              <p>Average benchmark score vs. GPT-5.5 (xhigh)</p>
+            </article>
+            <article class="result-metric">
+              <strong>~277&times;</strong>
+              <p>Model-size efficiency vs. GPT-5.5 (xhigh)</p>
+            </article>
+            <article class="result-metric">
+              <strong>~10K&times;</strong>
+              <p>GPU-count efficiency vs. GPT-5.5-scale training</p>
+            </article>
+            <article class="result-metric">
+              <strong>~100K&times;</strong>
+              <p>Training-data efficiency vs. GPT-5.5-scale training</p>
+            </article>
+          </div>
+
+          <figure class="spotlight-figure">
+            <div
+              id="performance-chart"
+              class="interactive-chart performance-chart"
+              aria-label="Interactive scientific intelligence comparison"
+              tabindex="0"
+            >
+              <img
+                src="assets/fig1-benchmark.png"
+                alt="Scientific intelligence evaluation comparing ExoMind with frontier and open models"
+                width="3988"
+                height="1858"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+              <div class="chart-hotspots" aria-hidden="false"></div>
+              <div class="chart-tooltip" role="status" aria-live="polite"></div>
+            </div>
+            <button
+              class="figure-expand zoomable-figure"
+              type="button"
+              data-figure="assets/fig1-benchmark.png"
+              aria-label="Open scientific intelligence evaluation at full resolution"
+              title="View full-resolution figure"
+            >
+              <span aria-hidden="true">&#10530;</span>
+            </button>
+          </figure>
+        </div>
+      </section>
+
+      <article class="article-flow">
+        <section id="overview" class="content-section reveal" aria-labelledby="overview-title">
+          <div class="section-copy">
+            <h2 id="overview-title">Intelligence beyond a single LLM</h2>
+            <p class="section-lead">
+              Scientific intelligence demands fine-grained, long-horizon reasoning that is
+              difficult to compress into a single model. Inspired by the Extended Mind Thesis,
+              ExoMind organizes intelligence as an agentic system of an LLM, typed interaction
+              objects, and autonomous interaction processes.
+            </p>
+          </div>
+          <figure class="wide-figure">
+            <button
+              class="paper-figure zoomable-figure"
+              type="button"
+              data-figure="assets/fig2-paradigm.png"
+              aria-label="Open the ExoMind paradigm comparison"
+            >
+              <img
+                src="assets/fig2-paradigm.png"
+                alt="Comparison between single-LLM specialization and the ExoMind agentic-system paradigm"
+                width="3974"
+                height="1587"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+
+          <section class="insight-block reveal" aria-labelledby="scaling-insights-title">
+            <h3 id="scaling-insights-title">A broader paradigm for scaling intelligence</h3>
+            <div class="insight-grid">
+              <div class="insight-item">
+                <h4>Deep specialization</h4>
+                <p>
+                  Shift specialization from repeatedly modifying model parameters toward
+                  designing interaction objects that can be tailored to the operations of a task
+                  or domain.
+                </p>
+              </div>
+              <div class="insight-item">
+                <h4>New scaling dimensions</h4>
+                <p>
+                  Expand capability through richer interaction objects and deeper autonomous
+                  interaction, beyond model size, data volume, and training time.
+                </p>
+              </div>
+              <div class="insight-item">
+                <h4>Stronger representational capacity</h4>
+                <p>
+                  Organize the model, external objects, and interaction processes as one system
+                  for diverse, fine-grained, and long-horizon tasks.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section id="approach" class="content-section approach-section" aria-labelledby="approach-title">
+          <div class="section-copy reveal">
+            <h2 id="approach-title">Building ExoMind</h2>
+            <p class="section-lead">
+              ExoMind is built through three connected systems rather than a single training
+              recipe: data engineering determines what is worth learning, interaction design
+              determines how scientific work is performed, and progressive training aligns the
+              model with that process.
+            </p>
+          </div>
+
+          <div class="method-stage reveal" data-tab-group>
+            <div class="method-stage-tabs" role="tablist" aria-label="ExoMind system components">
+              <button
+                id="method-tab-data"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="method-panel-data"
+              >
+                Systematic data engineering
+              </button>
+              <button
+                id="method-tab-interaction"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="method-panel-interaction"
+                tabindex="-1"
+              >
+                Deeply specialized scientific interaction
+              </button>
+              <button
+                id="method-tab-training"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="method-panel-training"
+                tabindex="-1"
+              >
+                Systematic training strategy
+              </button>
+            </div>
+
+            <div class="method-stage-content">
+              <section
+                id="method-panel-data"
+                class="method-panel"
+                role="tabpanel"
+                aria-labelledby="method-tab-data"
+              >
+                <p>
+                  ExoMind starts with a large and diverse scientific problem-answer pool, uses
+                  strong models to predict each problem's difficulty and potential tool benefit
+                  before trajectory generation, and progressively filters and routes problems
+                  into pure-reasoning or interaction-reasoning paths. This yields a compact set of
+                  high-quality data with stable learning signals.
+                </p>
+                <figure class="method-stage-figure">
+                  <button
+                    class="paper-figure zoomable-figure"
+                    type="button"
+                    data-figure="assets/fig3-data-pipeline.png"
+                    aria-label="Open the systematic data engineering pipeline"
+                  >
+                    <img
+                      src="assets/fig3-data-pipeline.png"
+                      alt="Systematic scientific data engineering pipeline"
+                      width="3959"
+                      height="1374"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </button>
+                </figure>
+              </section>
+
+              <section
+                id="method-panel-interaction"
+                class="method-panel"
+                role="tabpanel"
+                aria-labelledby="method-tab-interaction"
+                hidden
+              >
+                <p>
+                  ExoMind abstracts key operations in scientific reasoning and research into
+                  typed interaction objects under an action-observation contract, then distills
+                  verified Chain-of-Interaction trajectories for training. The model learns to
+                  select objects, absorb external observations, and iteratively update its
+                  reasoning state, allowing reusable interaction patterns to emerge from a finite
+                  object set.
+                </p>
+                <figure class="method-stage-figure">
+                  <button
+                    class="paper-figure zoomable-figure"
+                    type="button"
+                    data-figure="assets/fig4-interaction-framework.png"
+                    aria-label="Open the scientific interaction framework"
+                  >
+                    <img
+                      src="assets/fig4-interaction-framework.png"
+                      alt="Scientific interaction objects, Chain-of-Interaction distillation, and autonomous interaction patterns"
+                      width="3949"
+                      height="1291"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </button>
+                </figure>
+              </section>
+
+              <section
+                id="method-panel-training"
+                class="method-panel"
+                role="tabpanel"
+                aria-labelledby="method-tab-training"
+                hidden
+              >
+                <p>
+                  ExoMind transforms Qwen3.5-35B-A3B into an agentic reasoner through
+                  training-inference consistency and hybrid progressive CoI training. A unified
+                  interaction interface limits capability degradation, while staged reasoning and
+                  interaction trajectories build intrinsic reasoning, basic interaction, and
+                  higher-quality interaction patterns. The full specialization runs on 8 GPUs for
+                  one to two days.
+                </p>
+                <figure class="method-stage-figure">
+                  <button
+                    class="paper-figure zoomable-figure"
+                    type="button"
+                    data-figure="assets/fig5-training-paradigm.png"
+                    aria-label="Open the systematic training strategy"
+                  >
+                    <img
+                      src="assets/fig5-training-paradigm.png"
+                      alt="Training-inference consistency and hybrid progressive Chain-of-Interaction training"
+                      width="3590"
+                      height="1654"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </button>
+                </figure>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section id="results" class="content-section results-section" aria-labelledby="results-title">
+          <div class="section-copy reveal">
+            <h2 id="results-title">Scientific and general intelligence evaluation</h2>
+            <p class="section-lead">
+              Evaluate ExoMind along two complementary dimensions: scientific intelligence
+              against frontier open and proprietary models across eight benchmarks, and general
+              intelligence against the 35B base model across six benchmarks.
+            </p>
+          </div>
+
+          <section class="benchmark-section reveal" aria-labelledby="benchmark-explorer-title">
+            <div class="tool-heading">
+              <h3 id="benchmark-explorer-title">Benchmark explorer</h3>
+            </div>
+            <div class="benchmark-explorer">
+              <div class="benchmark-tabbar">
+                <button
+                  id="benchmark-previous"
+                  class="benchmark-step"
+                  type="button"
+                  aria-label="Show previous benchmark"
+                  aria-controls="benchmark-ranking"
+                  title="Previous benchmark"
+                >
+                  <span aria-hidden="true">&larr;</span>
+                </button>
+                <div
+                  id="benchmark-tabs"
+                  class="benchmark-tabs"
+                  role="tablist"
+                  aria-label="Benchmark datasets"
+                ></div>
+                <button
+                  id="benchmark-next"
+                  class="benchmark-step"
+                  type="button"
+                  aria-label="Show next benchmark"
+                  aria-controls="benchmark-ranking"
+                  title="Next benchmark"
+                >
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+              </div>
+              <div id="benchmark-summary" class="benchmark-summary"></div>
+              <div
+                id="benchmark-ranking"
+                class="benchmark-ranking"
+                role="tabpanel"
+                aria-live="polite"
+              ></div>
+            </div>
+          </section>
+
+          <section class="insight-block results-insights reveal" aria-labelledby="results-insights-title">
+            <h3 id="results-insights-title">What the results show</h3>
+            <div class="insight-grid">
+              <div class="insight-item">
+                <h4>Scientific research</h4>
+                <p>
+                  ExoMind reaches 70.0 on FrontierScience-Research and 84.0 on CMT-Benchmark,
+                  substantially exceeding the strongest external results, while remaining
+                  competitive on the highly challenging HLE and CritPt benchmarks.
+                </p>
+              </div>
+              <div class="insight-item">
+                <h4>Scientific reasoning</h4>
+                <p>
+                  It leads the compared models on AMO-Bench, IMO-AnswerBench, HiPhO, and
+                  FrontierScience-Olympiad with 78.0, 92.8, 49.7, and 89.0.
+                </p>
+              </div>
+              <div class="insight-item">
+                <h4>General intelligence</h4>
+                <p>
+                  ExoMind improves over the 35B base model on all six general benchmarks,
+                  including MMLU-Pro, GPQA-Diamond, MedMCQA, LiveCodeBench, xbench, and
+                  &tau;<sup>2</sup>-Bench, where the score rises from 32.5 to 74.8.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section id="evaluation" class="content-section evaluation-section" aria-labelledby="evaluation-title">
+          <div class="section-copy reveal">
+            <h2 id="evaluation-title">Evaluation scope</h2>
+            <p class="section-lead">
+              The evaluation covers frontier proprietary and open models, eight scientific
+              reasoning and research benchmarks, and six complementary general intelligence
+              benchmarks.
+            </p>
+          </div>
+          <div class="evidence-viewer reveal">
+            <div class="evidence-tabs" role="tablist" aria-label="Evaluation evidence">
+              <button
+                id="evidence-tab-models"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="evidence-panel-models"
+                data-evidence="models"
+              >
+                Evaluated models
+              </button>
+              <button
+                id="evidence-tab-scientific"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="evidence-panel-scientific"
+                data-evidence="scientific"
+              >
+                Scientific datasets
+              </button>
+              <button
+                id="evidence-tab-general"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="evidence-panel-general"
+                data-evidence="general"
+              >
+                General datasets
+              </button>
+            </div>
+            <div
+              id="evidence-panel-models"
+              class="evidence-panel model-table-panel"
+              role="tabpanel"
+              aria-labelledby="evidence-tab-models"
+              hidden
+            >
+              <div class="model-table-heading">
+                <p>29 comparison models across nine providers and a broad range of scales.</p>
+                <span class="open-model-legend"><i aria-hidden="true"></i>Open-source model</span>
+              </div>
+              <div
+                class="model-table-scroll"
+                tabindex="0"
+                aria-label="Scrollable table of evaluated model configurations"
+              >
+                <table class="model-table">
+                  <caption>Detailed configurations of evaluated comparison models</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Provider</th>
+                      <th scope="col">Model</th>
+                      <th scope="col">Release</th>
+                      <th scope="col">Parameters</th>
+                      <th scope="col">Architecture</th>
+                      <th scope="col">Availability</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="rowgroup" rowspan="2">OpenAI</th>
+                      <th scope="row">GPT-5.5 (xhigh)</th><td>2026-04</td><td>~9.7T</td><td>-</td><td>Proprietary</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">GPT-5.4 (xhigh)</th><td>2026-03</td><td>~2.2T</td><td>-</td><td>Proprietary</td>
+                    </tr>
+                    <tr>
+                      <th scope="rowgroup" rowspan="3">Google</th>
+                      <th scope="row">Gemini-3.1-Pro-Preview</th><td>2026-02</td><td>~9.0T</td><td>-</td><td>Proprietary</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Gemini-3.5-Flash-Thinking</th><td>2026-05</td><td>~6.6T</td><td>-</td><td>Proprietary</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">Gemma-4-31B</th><td>2026-04</td><td>31B</td><td>Dense</td><td>Open source</td>
+                    </tr>
+                    <tr>
+                      <th scope="rowgroup" rowspan="2">Anthropic</th>
+                      <th scope="row">Claude-Opus-4.8</th><td>2026-05</td><td>~572B</td><td>-</td><td>Proprietary</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Claude-Opus-4.8-Thinking</th><td>2026-05</td><td>~936B</td><td>-</td><td>Proprietary</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="rowgroup" rowspan="2">DeepSeek</th>
+                      <th scope="row">DeepSeek-V4-Pro (Max)</th><td>2026-04</td><td>1.6T / A49B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">DeepSeek-V4-Flash (Max)</th><td>2026-04</td><td>284B / A13B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="rowgroup" rowspan="2">Moonshot AI</th>
+                      <th scope="row">Kimi-K2.6</th><td>2026-04</td><td>1T / A32B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">Kimi-K2.5</th><td>2026-01</td><td>1T / A32B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="rowgroup" rowspan="3">Zhipu AI</th>
+                      <th scope="row">GLM-5.2</th><td>2026-06</td><td>744B / A40B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">GLM-5.1</th><td>2026-04</td><td>744B / A40B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">GLM-5</th><td>2026-02</td><td>744B / A40B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="rowgroup" rowspan="2">MiniMax</th>
+                      <th scope="row">MiniMax-M3</th><td>2026-06</td><td>428B / A23B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">MiniMax-M2.7</th><td>2026-05</td><td>229B / A10B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr>
+                      <th scope="rowgroup" rowspan="7">Qwen</th>
+                      <th scope="row">Qwen3.7-Max</th><td>2026-05</td><td>~685B</td><td>-</td><td>Proprietary</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Qwen3.6-Max-Preview</th><td>2026-04</td><td>~685B</td><td>-</td><td>Proprietary</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Qwen3.6-Plus</th><td>2026-04</td><td>~524B</td><td>-</td><td>Proprietary</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">Qwen3.6-35B-A3B</th><td>2026-04</td><td>35B / A3B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">Qwen3.5-397B-A17B</th><td>2026-02</td><td>397B / A17B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">Qwen3.5-122B-A10B</th><td>2026-02</td><td>122B / A10B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">Qwen3.5-35B-A3B</th><td>2026-02</td><td>35B / A3B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="rowgroup" rowspan="6">Shanghai AI Lab</th>
+                      <th scope="row">P1-VL-235B-A22B</th><td>2026-02</td><td>235B / A22B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">P1-VL-30B-A3B</th><td>2026-02</td><td>30B / A3B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">P1-235B-A22B</th><td>2025-11</td><td>235B / A22B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">P1-30B-A3B</th><td>2025-11</td><td>30B / A3B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">SU-01</th><td>2026-05</td><td>30B / A3B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                    <tr class="is-open">
+                      <th scope="row">Intern-S2-Preview</th><td>2026-05</td><td>35B / A3B</td><td>MoE</td><td>Open source</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="model-table-note">
+                ~ indicates an IKP-estimated model size; A denotes activated parameters for MoE models.
+              </p>
+            </div>
+            <div
+              id="evidence-panel-scientific"
+              class="evidence-panel"
+              role="tabpanel"
+              aria-labelledby="evidence-tab-scientific"
+            >
+              <button
+                class="paper-figure zoomable-figure"
+                type="button"
+                data-figure="assets/fig6-scientific-datasets.png?v=20260714-04"
+                aria-label="Open scientific dataset distributions"
+              >
+                <img
+                  src="assets/fig6-scientific-datasets.png?v=20260714-04"
+                  alt="Dataset distributions for scientific intelligence evaluation"
+                  width="5320"
+                  height="2220"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+            </div>
+            <div
+              id="evidence-panel-general"
+              class="evidence-panel"
+              role="tabpanel"
+              aria-labelledby="evidence-tab-general"
+              hidden
+            >
+              <button
+                class="paper-figure zoomable-figure"
+                type="button"
+                data-figure="assets/fig7-general-datasets.png?v=20260714-04"
+                aria-label="Open general intelligence dataset distributions"
+              >
+                <img
+                  src="assets/fig7-general-datasets.png?v=20260714-04"
+                  alt="Dataset distributions for general intelligence evaluation"
+                  width="5320"
+                  height="2480"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section ikp-section" aria-labelledby="ikp-title">
+          <div class="section-copy reveal">
+            <h2 id="ikp-title">Incompressible knowledge probe evaluation</h2>
+            <p class="section-lead">
+              IKP evaluation shows that ExoMind substantially improves the IKP accuracy of the
+              base 35B model and reaches a level close to models with approximately one trillion
+              parameters, suggesting a new dimension for scaling scientific intelligence through
+              interaction.
+            </p>
+          </div>
+          <figure class="ikp-figure reveal">
+            <div
+              id="ikp-chart"
+              class="interactive-chart"
+              aria-label="Interactive incompressible knowledge probe evaluation"
+              tabindex="0"
+            >
+              <img
+                src="assets/fig11-ikp.png"
+                alt="IKP evaluation showing ExoMind at 35B approaching the capability range of much larger models"
+                width="4160"
+                height="2000"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="chart-hotspots" aria-hidden="false"></div>
+              <div class="chart-tooltip" role="status" aria-live="polite"></div>
+            </div>
+            <button
+              class="figure-expand zoomable-figure"
+              type="button"
+              data-figure="assets/fig11-ikp.png"
+              aria-label="Open IKP evaluation at full resolution"
+              title="View full-resolution figure"
+            >
+              <span aria-hidden="true">&#10530;</span>
+            </button>
+          </figure>
+        </section>
+
+        <section class="content-section cases-section" aria-labelledby="cases-title">
+          <div class="section-copy reveal">
+            <h2 id="cases-title">Emergent scientific interaction patterns</h2>
+            <p class="section-lead">
+              More available interaction objects do not automatically produce stronger
+              performance. The key is whether the model can organize finite atomic capabilities
+              into an observation-guided process: identifying its current uncertainty, selecting
+              an appropriate interaction object, absorbing the returned observation, and updating
+              subsequent reasoning. Through hybrid progressive CoI training, ExoMind composes
+              these objects into reusable verification-seeking, evidence-seeking, and hybrid
+              closed-loop patterns.
+            </p>
+          </div>
+
+          <div class="case-notebook reveal" data-tab-group>
+            <div class="case-index" role="tablist" aria-label="Scientific interaction cases">
+              <button
+                id="case-tab-verification"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="case-panel-verification"
+              >
+                <span>Verification-seeking</span>
+              </button>
+              <button
+                id="case-tab-evidence"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="case-panel-evidence"
+              >
+                <span>Evidence-seeking</span>
+              </button>
+              <button
+                id="case-tab-hybrid"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="case-panel-hybrid"
+              >
+                <span>Hybrid closed-loop</span>
+              </button>
+            </div>
+
+            <article
+              id="case-panel-verification"
+              class="case-sheet"
+              role="tabpanel"
+              aria-labelledby="case-tab-verification"
+            >
+              <header class="case-header">
+                <div>
+                  <p class="case-kicker">FrontierScience-Olympiad #04</p>
+                  <h3>Resolve a sign ambiguity through executable verification</h3>
+                </div>
+                <span class="case-score">1.0 / 1.0</span>
+              </header>
+              <div class="case-question">
+                <span class="case-section-label">Research question</span>
+                <p>
+                  Derive the electric field outside a grounded conducting cylinder in a uniform
+                  transverse field and verify that the result satisfies the physical boundaries.
+                </p>
+              </div>
+              <dl class="case-brief" aria-label="Verification-seeking interaction summary">
+                <div>
+                  <dt>Uncertainty</dt>
+                  <dd><strong>A sign-sensitive derivative</strong><p>The cylindrical-gradient factor makes the sign of the tangential field fragile.</p></dd>
+                </div>
+                <div>
+                  <dt>Interaction</dt>
+                  <dd><strong>Code Executor</strong><p>Differentiate the potential symbolically instead of trusting manual recall.</p></dd>
+                </div>
+                <div>
+                  <dt>Observation</dt>
+                  <dd><strong>Both components are returned</strong><p>The executable result exposes the exact radial and tangential signs.</p></dd>
+                </div>
+                <div>
+                  <dt>Reasoning update</dt>
+                  <dd><strong>Verify physical limits</strong><p>Confirm the surface boundary and recover the applied field at infinity.</p></dd>
+                </div>
+              </dl>
+              <details class="case-details">
+                <summary>
+                  <span>Trajectory evidence</span>
+                </summary>
+                <div class="case-trace">
+                  <div class="trace-entry">
+                    <div class="trace-meta"><span class="trace-kind">Reasoning state</span></div>
+                    <div class="trace-body">
+                      <h4>Isolate the fragile step</h4>
+                      <p>
+                        The model starts from a grounded-cylinder potential that satisfies the
+                        boundary and far-field conditions, then identifies the tangential derivative
+                        as the step most likely to contain a sign error.
+                      </p>
+                      <pre><code>Phi = -E0*(r - a**2/r)*cos(theta)
+Etheta = -(1/r) * dPhi/dtheta</code></pre>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta">
+                      <span class="trace-kind">Action</span>
+                      <span class="trace-tool">Code Executor</span>
+                    </div>
+                    <div class="trace-body">
+                      <h4>Differentiate in cylindrical coordinates</h4>
+                      <pre><code>Phi = -E0*(r - a**2/r)*sp.cos(theta)
+Er = -sp.diff(Phi, r)
+Etheta = -(1/r)*sp.diff(Phi, theta)
+sp.simplify(Er), sp.simplify(Etheta)</code></pre>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta">
+                      <span class="trace-kind">Observation</span>
+                      <span class="trace-tool">Code Executor</span>
+                    </div>
+                    <div class="trace-body">
+                      <h4>Executable feedback fixes the sign</h4>
+                      <pre><code>Er = E0*(a**2 + r**2)*cos(theta)/r**2
+Etheta = E0*(a**2 - r**2)*sin(theta)/r**2</code></pre>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta"><span class="trace-kind">State update</span></div>
+                    <div class="trace-body">
+                      <h4>Absorb the result into the derivation</h4>
+                      <p>
+                        Rewriting the returned tangential component confirms the negative sign.
+                        ExoMind then checks that the tangential field vanishes at <code>r = a</code>
+                        and that the field approaches <code>E0 x-hat</code> as <code>r</code> tends to infinity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </article>
+
+            <article
+              id="case-panel-evidence"
+              class="case-sheet"
+              role="tabpanel"
+              aria-labelledby="case-tab-evidence"
+              hidden
+            >
+              <header class="case-header">
+                <div>
+                  <p class="case-kicker">CMT-Benchmark #05</p>
+                  <h3>Ground a symmetry conclusion in primary literature</h3>
+                </div>
+                <span class="case-score">1.0 / 1.0</span>
+              </header>
+              <div class="case-question">
+                <span class="case-section-label">Research question</span>
+                <p>
+                  Determine which time-reversal and rotational symmetries survive in a twisted
+                  bilayer system when the two layers have unequal masses.
+                </p>
+              </div>
+              <dl class="case-brief" aria-label="Evidence-seeking interaction summary">
+                <div>
+                  <dt>Uncertainty</dt>
+                  <dd><strong>Layer inversion remains unresolved</strong><p>The standard continuum symmetries do not directly settle unequal layer masses.</p></dd>
+                </div>
+                <div>
+                  <dt>Interaction</dt>
+                  <dd><strong>Scholar, Search, Browser</strong><p>Discover the exact-symmetry paper, then move from its abstract to the full source.</p></dd>
+                </div>
+                <div>
+                  <dt>Observation</dt>
+                  <dd><strong>Ground T and C3z</strong><p>The source establishes the relevant continuum-model symmetry reference point.</p></dd>
+                </div>
+                <div>
+                  <dt>Reasoning update</dt>
+                  <dd><strong>Apply the mass asymmetry</strong><p>Preserve T and C3z, while unequal layer masses break the layer-exchanging C2y.</p></dd>
+                </div>
+              </dl>
+              <details class="case-details">
+                <summary>
+                  <span>Trajectory evidence</span>
+                </summary>
+                <div class="case-trace">
+                  <div class="trace-entry">
+                    <div class="trace-meta"><span class="trace-kind">Reasoning state</span></div>
+                    <div class="trace-body">
+                      <h4>Separate source knowledge from the task-specific condition</h4>
+                      <p>
+                        ExoMind can partially reason about time reversal and rotational symmetry,
+                        but it is uncertain whether the layer-exchanging <code>C2y</code> operation
+                        survives when the two kinetic terms use different masses.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta">
+                      <span class="trace-kind">Action</span>
+                      <span class="trace-tool">Google Scholar</span>
+                    </div>
+                    <div class="trace-body">
+                      <h4>Search for an exact-symmetry reference</h4>
+                      <pre><code>"Bistritzer-MacDonald continuum model symmetries C2y C3z"
+"twisted bilayer graphene Hamiltonian time reversal C2y C3z"</code></pre>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta">
+                      <span class="trace-kind">Observation</span>
+                      <span class="trace-tool">Google Scholar</span>
+                    </div>
+                    <div class="trace-body">
+                      <h4>Identify the primary source</h4>
+                      <p>
+                        The results surface <em>Twisted bilayer graphene. III. Interacting
+                        Hamiltonian and exact symmetries</em>. Its abstract is relevant but does
+                        not contain enough detail to answer the layer-mass question.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta">
+                      <span class="trace-kind">Action + observation</span>
+                      <span class="trace-tool">Web Search</span>
+                      <span class="trace-tool">Browser</span>
+                    </div>
+                    <div class="trace-body">
+                      <h4>Follow the paper trail to arXiv:2009.12376</h4>
+                      <p>
+                        Browser grounding recovers the paper's continuum-model discussion, which
+                        establishes spinless time reversal and <code>C3z</code> rotational symmetry.
+                        The source supplies a trusted symmetry reference rather than the final answer.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta"><span class="trace-kind">State update</span></div>
+                    <div class="trace-body">
+                      <h4>Combine evidence with the unequal-mass Hamiltonian</h4>
+                      <p>
+                        ExoMind preserves <code>T</code> and <code>C3z</code> from the grounded
+                        reference, then observes that <code>C2y</code> exchanges layers and would
+                        require equal masses. The final decision is therefore T and C3z preserved,
+                        C2y broken.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </article>
+
+            <article
+              id="case-panel-hybrid"
+              class="case-sheet"
+              role="tabpanel"
+              aria-labelledby="case-tab-hybrid"
+              hidden
+            >
+              <header class="case-header">
+                <div>
+                  <p class="case-kicker">FrontierScience-Research #19</p>
+                  <h3>Close the loop between literature and mathematical verification</h3>
+                </div>
+                <span class="case-score">10.0 / 10.0</span>
+              </header>
+              <div class="case-question">
+                <span class="case-section-label">Research question</span>
+                <p>
+                  Construct a quantum shutter protocol and generalize the one-photon mechanism to
+                  an N-photon setting while preserving the required orthogonality.
+                </p>
+              </div>
+              <dl class="case-brief" aria-label="Hybrid closed-loop interaction summary">
+                <div>
+                  <dt>Dual uncertainty</dt>
+                  <dd><strong>Recover and generalize</strong><p>The trajectory must establish both the source construction and its N-photon extension.</p></dd>
+                </div>
+                <div>
+                  <dt>Evidence grounding</dt>
+                  <dd><strong>Web Search and Browser</strong><p>Locate the quantum-shutter paper and extract its pre- and post-selected states.</p></dd>
+                </div>
+                <div>
+                  <dt>Executable verification</dt>
+                  <dd><strong>Code Executor</strong><p>Check the overlap that determines whether transmitted branches survive.</p></dd>
+                </div>
+                <div>
+                  <dt>Synthesis</dt>
+                  <dd><strong>Close the scientific loop</strong><p>Join source-grounded states with the verified induction argument.</p></dd>
+                </div>
+              </dl>
+              <details class="case-details">
+                <summary>
+                  <span>Trajectory evidence</span>
+                </summary>
+                <div class="case-trace">
+                  <div class="trace-entry">
+                    <div class="trace-meta"><span class="trace-kind">Reasoning state</span></div>
+                    <div class="trace-body">
+                      <h4>Recognize two coupled uncertainties</h4>
+                      <p>
+                        The model must recover the original quantum-shutter construction from a
+                        reliable source and independently verify that its generalized transmitted
+                        branches are removed after post-selection.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta">
+                      <span class="trace-kind">Action</span>
+                      <span class="trace-tool">Web Search</span>
+                    </div>
+                    <div class="trace-body">
+                      <h4>Locate the original construction</h4>
+                      <pre><code>quantum shutter pre- and post-selected close all N slits
+Aharonov Vaidman quantum shutter N slits
+K shutters prevent passage of K photons</code></pre>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta">
+                      <span class="trace-kind">Observation</span>
+                      <span class="trace-tool">Web Search</span>
+                    </div>
+                    <div class="trace-body">
+                      <h4>Find the source and its central claim</h4>
+                      <p>
+                        Search returns <em>How One Shutter Can Close N Slits</em>
+                        (<code>quant-ph/0206074</code>), which describes a pre- and post-selected
+                        shutter that closes an arbitrary number of slits for a photon.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta">
+                      <span class="trace-kind">Action + observation</span>
+                      <span class="trace-tool">Browser</span>
+                    </div>
+                    <div class="trace-body">
+                      <h4>Ground the pre- and post-selected states</h4>
+                      <p>The paper supplies the state construction needed for the derivation:</p>
+                      <pre><code>|Psi_1> = (sum_i |i> + sqrt(N-1)|N+1>) / sqrt(2N-1)
+|Psi_2> = (sum_i |i> - sqrt(N-1)|N+1>) / sqrt(2N-1)</code></pre>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta">
+                      <span class="trace-kind">Action</span>
+                      <span class="trace-tool">Code Executor</span>
+                    </div>
+                    <div class="trace-body">
+                      <h4>Test the generalized orthogonality condition</h4>
+                      <pre><code>inner = (m - D) / (2*N - m)
+inner.subs({m: 2, D: 2})  # 0</code></pre>
+                    </div>
+                  </div>
+                  <div class="trace-entry">
+                    <div class="trace-meta"><span class="trace-kind">Observation + state update</span></div>
+                    <div class="trace-body">
+                      <h4>Use the zero overlap to complete the induction</h4>
+                      <p>
+                        The overlap vanishes whenever <code>D = m</code>. The first shutter removes
+                        branches occupying <code>m</code> distinct slits; subsequent shutters handle
+                        the remaining branches in descending order. ExoMind absorbs this executable
+                        result into a source-grounded construction for K shutters and K photons.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </article>
+          </div>
+        </section>
+
+        <section id="ecosystem" class="content-section ecosystem-section" aria-labelledby="ecosystem-title">
+          <div class="section-copy reveal">
+            <h2 id="ecosystem-title">Related scientific intelligence projects</h2>
+            <p class="section-lead">
+              Scientific reasoning models, benchmarks, and multi-agent systems from the broader
+              open ecosystem.
+            </p>
+          </div>
+          <div class="project-grid reveal" aria-label="Related projects">
+            <a class="project-card" href="https://github.com/PRIME-RL/P1" target="_blank" rel="noopener noreferrer">
+              <div><h3>P1</h3><span aria-hidden="true">&nearr;</span></div>
+              <p>Physics olympiad reasoning models trained with reinforcement learning.</p>
+            </a>
+            <a class="project-card" href="https://huggingface.co/datasets/SciYu/HiPhO" target="_blank" rel="noopener noreferrer">
+              <div><h3>HiPhO</h3><span aria-hidden="true">&nearr;</span></div>
+              <p>High-level physics olympiad benchmark for multimodal scientific reasoning.</p>
+            </a>
+            <a class="project-card" href="https://github.com/magent4aci/openJiSi" target="_blank" rel="noopener noreferrer">
+              <div><h3>JiSi</h3><span aria-hidden="true">&nearr;</span></div>
+              <p>Routing and aggregation system for scalable model selection and evidence use.</p>
+            </a>
+          </div>
+        </section>
+
+        <section id="citation" class="content-section citation-section" aria-labelledby="citation-title">
+          <div class="section-copy reveal">
+            <h2 id="citation-title">Citation</h2>
+            <p class="section-lead">
+              Use this provisional citation while the technical report is forthcoming.
+            </p>
+          </div>
+          <div class="citation-block reveal">
+            <div class="citation-toolbar">
+              <span>Provisional BibTeX</span>
+              <button
+                id="copy-citation"
+                type="button"
+                data-copy-target="citation-bibtex"
+              >
+                Copy BibTeX
+              </button>
+              <span id="citation-copy-status" class="citation-copy-status" role="status" aria-live="polite"></span>
+            </div>
+            <pre id="citation-bibtex"><code>@misc{exomind2026,
+  title  = {ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System},
+  author = {{ExoMind Team}},
+  year   = {2026},
+  note   = {Technical report, forthcoming}
+}</code></pre>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>ExoMind</strong>
+        <span>ExoMind Team · Shanghai Artificial Intelligence Laboratory</span>
+      </div>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+      &uarr;
+    </button>
+
+    <dialog id="figure-lightbox" class="figure-lightbox" aria-label="Expanded figure">
+      <button class="lightbox-close" type="button" aria-label="Close expanded figure">&times;</button>
+      <div class="lightbox-scroll">
+        <img alt="Expanded research figure" />
+      </div>
+    </dialog>
+
+    <script src="performance-data.js?v=20260714-03"></script>
+    <script src="benchmark-data.js?v=20260714-03"></script>
+    <script src="script.js?v=20260717-01"></script>
+  </body>
+</html>
