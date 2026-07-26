@@ -26,6 +26,9 @@
 
 ## 🔥 News
 
+- **2026-07-26**: 🔥 We update the technical report, author list, and benchmark
+  comparisons with Kimi-K3, Kimi-K2.7-Code, and Agents-A1, together with the
+  corresponding result figures.
 - **2026-07-21**: 🔥 We release the ExoMind technical report, official project page,
   and public repository.
 
@@ -153,6 +156,9 @@ pipeline, a scientific interaction framework, and a systematic training strategy
 
 See the [project-page evaluation explorer](https://ai4sgi.github.io/ExoMind/#results)
 for complete model comparisons, benchmark scope, and interactive rankings.
+The updated Table 2 comparison includes Kimi-K3, Kimi-K2.7-Code, and Agents-A1,
+whose reported average scores are **49.2**, **43.6**, and **38.3**, respectively;
+ExoMind retains the strongest average performance at **67.5**.
 
 ## Citation
 
@@ -161,7 +167,7 @@ Please cite the ExoMind technical report as follows:
 ```bibtex
 @misc{exomind2026,
   title  = {ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System},
-  author = {Peng Ye and Zhuo Liu and Jingqi Ye and Fangchen Yu and Shengji Tang and Yichen Jiang and Haonan He and Tao Chen and Shuyue Hu and Bo Zhang and Bowen Zhou and Wanli Ouyang and Lei Bai},
+  author = {Peng Ye and Zhuo Liu and Jingqi Ye and Fangchen Yu and Shengji Tang and Yichen Jiang and Haonan He and Zongsheng Cao and Tao Chen and Bo Zhang and Bowen Zhou and Wanli Ouyang and Lei Bai},
   year   = {2026},
   note   = {Technical report},
   url    = {https://github.com/AI4SGI/ExoMind/blob/main/Paper.pdf}

@@ -161,12 +161,13 @@
     if (!panel) return;
 
     const source = {
-      width: 3988,
-      height: 1858,
-      plotLeft: 218,
-      plotRight: 3098,
-      plotTop: 160,
-      plotBottom: 1420,
+      width: 5707,
+      height: 2677,
+      plotLeft: 321,
+      plotRight: 4459,
+      plotTop: 243,
+      plotBottom: 2051,
+      markerScale: 5707 / 3988,
     };
 
     const markerDiameters = {
@@ -178,7 +179,7 @@
       "Qwen3.7-Max": 128,
       "DeepSeek-V4-Pro (Max)": 154,
       "DeepSeek-V4-Flash (Max)": 102,
-      "Kimi-K2.6": 150,
+      "Kimi-K3": 170,
       "GLM-5.2": 132,
       "MiniMax-M3": 112,
       "Qwen3.5-397B-A17B": 108,
@@ -186,6 +187,7 @@
       "Qwen3.5-35B-A3B": 84,
       "Gemma-4-31B": 84,
       "Intern-S2-Preview": 84,
+      "Agents-A1": 84,
     };
 
     const modelSizes = {
@@ -197,7 +199,7 @@
       "Qwen3.7-Max": "~685B",
       "DeepSeek-V4-Pro (Max)": "1.6T",
       "DeepSeek-V4-Flash (Max)": "284B",
-      "Kimi-K2.6": "1T",
+      "Kimi-K3": "2.8T",
       "GLM-5.2": "744B",
       "MiniMax-M3": "428B",
       "Qwen3.5-397B-A17B": "397B",
@@ -205,6 +207,7 @@
       "Qwen3.5-35B-A3B": "35B",
       "Gemma-4-31B": "31B",
       "Intern-S2-Preview": "35B",
+      "Agents-A1": "35B",
     };
 
     const points = panel.points.map((point) => ({
@@ -214,7 +217,7 @@
       sourceX: source.plotLeft + (point.x / 2.2) * (source.plotRight - source.plotLeft),
       sourceY: source.plotTop + ((70 - point.y) / 40) * (source.plotBottom - source.plotTop),
       color: point.color,
-      sourceDiameter: markerDiameters[point.key] || 90,
+      sourceDiameter: (markerDiameters[point.key] || 90) * source.markerScale,
     }));
 
     const chartController = createChartInteraction(document.querySelector("#performance-chart"), {
@@ -596,29 +599,59 @@
     const formatIkpDetail = (accuracy, modelSize, estimated = false) =>
       `IKP accuracy ${accuracy.toFixed(1)}% · Model size ${estimated ? "~" : ""}${modelSize}`;
 
+    const source = {
+      width: 5883,
+      height: 2900,
+      xLogScale: 1621.9613,
+      xOffset: -2007.173,
+      yScale: -43.30848,
+      yOffset: 3638.4235,
+    };
+    const sourceX = (modelSizeB) =>
+      source.xLogScale * Math.log10(modelSizeB) + source.xOffset;
+    const sourceY = (accuracy) => source.yScale * accuracy + source.yOffset;
+    const point = (name, accuracy, modelSizeB, modelSize, sourceDiameter, color, estimated = false) => ({
+      name,
+      detail: formatIkpDetail(accuracy, modelSize, estimated),
+      sourceX: sourceX(modelSizeB),
+      sourceY: sourceY(accuracy),
+      sourceDiameter,
+      color,
+    });
+
     const points = [
-      { name: "ExoMind", detail: "IKP accuracy 56.0% · Actual model size 35B · IKP-equivalent scale ~1T", sourceX: 409, sourceY: 837, sourceDiameter: 102, color: "#e31a1c" },
-      { name: "Qwen3.5-35B-A3B", detail: formatIkpDetail(37.4, "35B"), sourceX: 409, sourceY: 1369, sourceDiameter: 28, color: "#ab68e6" },
-      { name: "Qwen3.5-122B-A10B", detail: formatIkpDetail(48.3, "122B"), sourceX: 991, sourceY: 1058, sourceDiameter: 52, color: "#ab68e6" },
-      { name: "MiniMax-M2.7", detail: formatIkpDetail(40.9, "229B"), sourceX: 1283, sourceY: 1270, sourceDiameter: 62, color: "#f03365" },
-      { name: "DeepSeek-V4-Flash (Max)", detail: formatIkpDetail(56.3, "284B"), sourceX: 1383, sourceY: 829, sourceDiameter: 66, color: "#4f6aef" },
-      { name: "Qwen3.5-397B-A17B", detail: formatIkpDetail(48.9, "397B"), sourceX: 1539, sourceY: 1041, sourceDiameter: 72, color: "#ab68e6" },
-      { name: "Qwen3.6-Plus", detail: formatIkpDetail(53.3, "524B", true), sourceX: 1668, sourceY: 915, sourceDiameter: 82, color: "#ab68e6" },
-      { name: "Claude-Opus-4.8", detail: formatIkpDetail(53.9, "572B", true), sourceX: 1710, sourceY: 898, sourceDiameter: 74, color: "#ee822f" },
-      { name: "Qwen3.7-Max", detail: formatIkpDetail(54.7, "685B", true), sourceX: 1792, sourceY: 873, sourceDiameter: 80, color: "#ab68e6" },
-      { name: "GLM-5", detail: formatIkpDetail(56.8, "744B"), sourceX: 1832, sourceY: 813, sourceDiameter: 82, color: "#9da3aa" },
-      { name: "GLM-5.1", detail: formatIkpDetail(57.8, "744B"), sourceX: 1832, sourceY: 785, sourceDiameter: 82, color: "#9da3aa" },
-      { name: "Claude-Opus-4.8-Thinking", detail: formatIkpDetail(57.0, "936B", true), sourceX: 1938, sourceY: 808, sourceDiameter: 92, color: "#ee822f" },
-      { name: "Kimi-K2.6", detail: formatIkpDetail(62.4, "1.0T"), sourceX: 1988, sourceY: 655, sourceDiameter: 86, color: "#69aeff" },
-      { name: "DeepSeek-V4-Pro (Max)", detail: formatIkpDetail(61.3, "1.6T"), sourceX: 2187, sourceY: 685, sourceDiameter: 92, color: "#4f6aef" },
-      { name: "GPT-5.4 (xhigh)", detail: formatIkpDetail(62.1, "2.2T", true), sourceX: 2336, sourceY: 661, sourceDiameter: 104, color: "#0ca982" },
-      { name: "Gemini-3.5-Flash-Thinking", detail: formatIkpDetail(69.5, "6.6T", true), sourceX: 2848, sourceY: 450, sourceDiameter: 122, color: "#fabc05" },
-      { name: "GPT-5.5 (xhigh)", detail: formatIkpDetail(71.6, "9.7T", true), sourceX: 3028, sourceY: 391, sourceDiameter: 124, color: "#0ca982" },
+      {
+        name: "ExoMind",
+        detail: "IKP accuracy 56.0% · Actual model size 35B · IKP-equivalent scale ~1T",
+        sourceX: 497,
+        sourceY: 1221,
+        sourceDiameter: 144,
+        color: "#e31a1c",
+      },
+      point("Qwen3.5-35B-A3B", 37.4, 35, "35B", 42, "#ab68e6"),
+      { ...point("Agents-A1", 47.1, 35, "35B", 42, "#2fab75"), sourceX: 497, sourceY: 1598 },
+      point("Qwen3.5-122B-A10B", 48.3, 122, "122B", 74, "#ab68e6"),
+      point("MiniMax-M2.7", 40.9, 229, "229B", 88, "#f03365"),
+      point("DeepSeek-V4-Flash (Max)", 56.3, 284, "284B", 94, "#4f6aef"),
+      point("Qwen3.5-397B-A17B", 48.9, 397, "397B", 102, "#ab68e6"),
+      point("Qwen3.6-Plus", 53.3, 524, "524B", 116, "#ab68e6", true),
+      point("Claude-Opus-4.8", 53.9, 572, "572B", 105, "#ee822f", true),
+      point("Qwen3.7-Max", 54.7, 685, "685B", 113, "#ab68e6", true),
+      point("GLM-5", 56.8, 744, "744B", 116, "#9da3aa"),
+      point("GLM-5.1", 57.8, 744, "744B", 116, "#9da3aa"),
+      point("Claude-Opus-4.8-Thinking", 57.0, 936, "936B", 130, "#ee822f", true),
+      point("Kimi-K2.6", 62.4, 1000, "1.0T", 122, "#69aeff"),
+      { ...point("Kimi-K2.7-Code", 53.9, 1100, "1.1T", 126, "#69aeff"), sourceX: 2926, sourceY: 1307 },
+      point("DeepSeek-V4-Pro (Max)", 61.3, 1600, "1.6T", 130, "#4f6aef"),
+      point("GPT-5.4 (xhigh)", 62.1, 2200, "2.2T", 147, "#0ca982", true),
+      { ...point("Kimi-K3", 63.5, 2800, "2.8T", 150, "#69aeff"), sourceX: 3584, sourceY: 887 },
+      point("Gemini-3.5-Flash-Thinking", 69.5, 6600, "6.6T", 173, "#fabc05", true),
+      point("GPT-5.5 (xhigh)", 71.6, 9700, "9.7T", 175, "#0ca982", true),
     ];
 
     createChartInteraction(document.querySelector("#ikp-chart"), {
-      sourceWidth: 4160,
-      sourceHeight: 2000,
+      sourceWidth: source.width,
+      sourceHeight: source.height,
       points,
     });
   };
