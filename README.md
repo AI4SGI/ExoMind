@@ -26,15 +26,8 @@
 
 ## 🔥 News
 
-- **2026-07-26**: 🔥 We update the technical report, author list, and benchmark
-  comparisons with Kimi-K3, Kimi-K2.7-Code, and Agents-A1, together with the
-  corresponding result figures.
-- **2026-07-21**: 🔥 We release the ExoMind technical report, official project page,
+- **2026-07-27**: 🔥 We release the ExoMind technical report, official project page,
   and public repository.
-
-> [!NOTE]
-> This initial release contains the technical report and official project website.
-> Model weights, data, and training and inference code are forthcoming.
 
 ## Overview
 
