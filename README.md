@@ -149,9 +149,6 @@ pipeline, a scientific interaction framework, and a systematic training strategy
 
 See the [project-page evaluation explorer](https://ai4sgi.github.io/ExoMind/#results)
 for complete model comparisons, benchmark scope, and interactive rankings.
-The updated Table 2 comparison includes Kimi-K3, Kimi-K2.7-Code, and Agents-A1,
-whose reported average scores are **49.2**, **43.6**, and **38.3**, respectively;
-ExoMind retains the strongest average performance at **67.5**.
 
 ## Citation
 
