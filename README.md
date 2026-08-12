@@ -26,7 +26,7 @@
 
 ## 🔥 News
 
-- **2026-07-27**: 🔥 We release the ExoMind technical report, official project page,
+- **2026-08-12**: 🔥 We release the ExoMind technical report, official project page,
   and public repository.
 
 ## Overview
