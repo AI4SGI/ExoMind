@@ -157,7 +157,7 @@ Please cite the ExoMind technical report as follows:
 ```bibtex
 @misc{exomind2026,
   title  = {ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System},
-  author = {Peng Ye and Zhuo Liu and Jingqi Ye and Fangchen Yu and Shengji Tang and Yichen Jiang and Haonan He and Zongsheng Cao and Tao Chen and Bo Zhang and Bowen Zhou and Wanli Ouyang and Lei Bai},
+  author = {Peng Ye and Zhuo Liu and Jingqi Ye and Fangchen Yu and Shengji Tang and Yichen Jiang and Haonan He and Zongsheng Cao and Tao Chen and Bo Zhang and Wanli Ouyang and Bowen Zhou and Lei Bai},
   year   = {2026},
   note   = {Technical report},
   url    = {https://github.com/AI4SGI/ExoMind/blob/main/Paper.pdf}
