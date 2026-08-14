@@ -147,16 +147,50 @@ pipeline, a scientific interaction framework, and a systematic training strategy
 
 ## Performance
 
-<p align="center">
-  <a href="https://ai4sgi.github.io/ExoMind/#performance">
-    <img src="./docs/assets/fig-model-comparison.png" alt="ExoMind performance compared with representative frontier models across eight scientific benchmarks" width="100%">
-  </a>
+Under the technical report's evaluation setup, ExoMind reaches an
+eight-benchmark average of **67.5**, compared with **54.2** for the next-best
+representative model shown below.
+
+<p>
+🥇 Best score among the representative models shown
 </p>
 
-ExoMind reaches an eight-benchmark average of **67.5**, compared with **54.2**
-for the next-best representative model shown above. See the [project-page
-evaluation explorer](https://ai4sgi.github.io/ExoMind/#results) for the complete
-model list, benchmark scope, evaluation settings, and interactive rankings.
+<table>
+<thead>
+<tr>
+<th rowspan="2" align="left">Benchmark</th>
+<th align="center">⭐ Ours</th>
+<th colspan="7" align="center">Representative frontier models</th>
+</tr>
+<tr>
+<th align="center">ExoMind<br>35B-A3B</th>
+<th align="center">Claude-Opus-4.8<br>Thinking</th>
+<th align="center">GPT-5.5<br>(xhigh)</th>
+<th align="center">Gemini-3.1-Pro<br>Preview</th>
+<th align="center">Kimi-K3</th>
+<th align="center">Qwen3.7-Max</th>
+<th align="center">GLM-5.2</th>
+<th align="center">DeepSeek-V4-Pro<br>(Max)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="9" align="left"><b>🧪 Scientific Research</b></td></tr>
+<tr><td align="left">HLE w/ tools</td><td align="center">50.9</td><td align="center">🥇 57.9</td><td align="center">52.2</td><td align="center">51.4</td><td align="center">56.0</td><td align="center">53.5</td><td align="center">54.7</td><td align="center">48.2</td></tr>
+<tr><td align="left">FrontierScience-Research</td><td align="center">🥇 70.0</td><td align="center">26.7</td><td align="center">26.7</td><td align="center">11.7</td><td align="center">21.7</td><td align="center">10.0</td><td align="center">15.0</td><td align="center">13.3</td></tr>
+<tr><td align="left">CMT-Benchmark</td><td align="center">🥇 84.0</td><td align="center">46.0</td><td align="center">43.0</td><td align="center">43.0</td><td align="center">34.0</td><td align="center">34.0</td><td align="center">20.0</td><td align="center">28.0</td></tr>
+<tr><td align="left">CritPt</td><td align="center">25.7</td><td align="center">20.9</td><td align="center">🥇 27.1</td><td align="center">17.7</td><td align="center">23.4</td><td align="center">13.4</td><td align="center">20.9</td><td align="center">7.1</td></tr>
+<tr><td colspan="9" align="left"><b>🧠 Scientific Reasoning</b></td></tr>
+<tr><td align="left">AMO-Bench</td><td align="center">🥇 78.0</td><td align="center">74.0</td><td align="center">70.0</td><td align="center">63.1</td><td align="center">64.0</td><td align="center">57.4</td><td align="center">54.0</td><td align="center">68.0</td></tr>
+<tr><td align="left">IMO-AnswerBench</td><td align="center">🥇 92.8</td><td align="center">86.8</td><td align="center">83.8</td><td align="center">90.0</td><td align="center">82.8</td><td align="center">90.0</td><td align="center">91.0</td><td align="center">89.8</td></tr>
+<tr><td align="left">HiPhO</td><td align="center">🥇 49.7</td><td align="center">46.4</td><td align="center">43.3</td><td align="center">43.4</td><td align="center">42.4</td><td align="center">38.8</td><td align="center">37.4</td><td align="center">38.7</td></tr>
+<tr><td align="left">FrontierScience-Olympiad</td><td align="center">🥇 89.0</td><td align="center">75.0</td><td align="center">78.0</td><td align="center">77.0</td><td align="center">69.0</td><td align="center">80.0</td><td align="center">76.5</td><td align="center">76.0</td></tr>
+<tr><td align="left"><b>Eight-benchmark average</b></td><td align="center">🥇 67.5</td><td align="center">54.2</td><td align="center">53.0</td><td align="center">49.7</td><td align="center">49.2</td><td align="center">47.1</td><td align="center">46.2</td><td align="center">46.1</td></tr>
+</tbody>
+</table>
+
+See the [project-page evaluation
+explorer](https://ai4sgi.github.io/ExoMind/#results) for the complete model list,
+benchmark scope, evaluation settings, and interactive rankings.
 
 ## Citation
 
