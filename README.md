@@ -43,7 +43,7 @@ benchmarks increases from **36.2 to 67.5**, while it also improves over the base
 model on all six evaluated general-capability benchmarks.
 
 <p align="center">
-  <a href="https://ai4sgi.github.io/ExoMind/#results">
+  <a href="https://ai4sgi.github.io/ExoMind/#performance">
     <img src="./docs/assets/fig1-benchmark.png" alt="ExoMind scientific intelligence evaluation" width="100%">
   </a>
 </p>
@@ -142,7 +142,7 @@ pipeline, a scientific interaction framework, and a systematic training strategy
 ## Performance
 
 <p align="center">
-  <a href="https://ai4sgi.github.io/ExoMind/#results">
+  <a href="https://ai4sgi.github.io/ExoMind/#performance">
     <img src="./docs/assets/fig-model-comparison.png" alt="ExoMind performance compared with representative frontier models across eight scientific benchmarks" width="100%">
   </a>
 </p>

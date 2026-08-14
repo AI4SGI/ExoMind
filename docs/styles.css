@@ -10,10 +10,10 @@
   --red: #df2f2f;
   --red-dark: #b81f24;
   --red-soft: #fff1f1;
-  --blue: #096b8a;
-  --blue-soft: #edf7fa;
-  --green: #2f7d4e;
-  --green-soft: #eef8f0;
+  --blue: #174f87;
+  --blue-soft: #eef4fa;
+  --green: #174f87;
+  --green-soft: #edf3f9;
   --slate-bar: #82909c;
   --shadow-soft: 0 14px 40px rgba(28, 38, 47, 0.08);
   --article-width: 1120px;
@@ -81,7 +81,7 @@ h3 {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(9, 107, 138, 0.32);
+  outline: 3px solid rgba(23, 79, 135, 0.32);
   outline-offset: 3px;
 }
 
@@ -354,6 +354,7 @@ a.resource-link small {
 .result-spotlight {
   margin-top: 18px;
   padding: 68px 24px 72px;
+  scroll-margin-top: 74px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: var(--surface);
@@ -1369,7 +1370,7 @@ figcaption {
   flex: 0 0 auto;
   align-items: center;
   gap: 8px;
-  color: #405148;
+  color: #2f4760;
   font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
@@ -1378,7 +1379,7 @@ figcaption {
 .open-model-legend i {
   width: 12px;
   height: 12px;
-  border: 1px solid #c6dfcc;
+  border: 1px solid #bfd0e0;
   background: var(--green-soft);
 }
 
@@ -1785,7 +1786,7 @@ figcaption {
   max-width: 100%;
   margin: 12px 0 0;
   padding: 13px 15px;
-  border-left: 2px solid #aac8ce;
+  border-left: 2px solid #b8cade;
   background: var(--surface);
   color: #303a41;
   font-size: 12px;
