@@ -10,10 +10,10 @@
   --red: #df2f2f;
   --red-dark: #b81f24;
   --red-soft: #fff1f1;
-  --blue: #174f87;
-  --blue-soft: #eef4fa;
-  --green: #174f87;
-  --green-soft: #edf3f9;
+  --graphite: #46515b;
+  --graphite-dark: #30363d;
+  --graphite-soft: #f2f4f6;
+  --graphite-line: #d2d8dd;
   --slate-bar: #82909c;
   --shadow-soft: 0 14px 40px rgba(28, 38, 47, 0.08);
   --article-width: 1120px;
@@ -81,7 +81,7 @@ h3 {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(23, 79, 135, 0.32);
+  outline: 3px solid rgba(184, 31, 36, 0.3);
   outline-offset: 3px;
 }
 
@@ -337,7 +337,13 @@ a.resource-link:focus-visible {
 }
 
 a.resource-link small {
-  color: var(--blue);
+  color: var(--graphite);
+  transition: color 160ms ease;
+}
+
+a.resource-link:hover small,
+a.resource-link:focus-visible small {
+  color: var(--red-dark);
 }
 
 .resource-link small {
@@ -904,8 +910,8 @@ figcaption {
 
 .figure-expand:hover,
 .figure-expand:focus-visible {
-  border-color: var(--blue);
-  color: var(--blue);
+  border-color: var(--red-dark);
+  color: var(--red-dark);
 }
 
 .figure-actions {
@@ -918,16 +924,18 @@ figcaption {
   border: 0;
   border-bottom: 1px solid var(--line-strong);
   background: transparent;
-  color: var(--blue);
+  color: var(--graphite);
   cursor: pointer;
   font-size: 13px;
   font-weight: 650;
   line-height: 1.5;
+  transition: border-color 160ms ease, color 160ms ease;
 }
 
 .text-action:hover,
 .text-action:focus-visible {
-  border-bottom-color: var(--blue);
+  border-bottom-color: var(--red-dark);
+  color: var(--red-dark);
 }
 
 .benchmark-section {
@@ -1075,7 +1083,7 @@ figcaption {
 
 .summary-domain {
   margin-bottom: 5px;
-  color: var(--blue);
+  color: var(--red-dark);
   font-size: 13px;
   font-weight: 700;
   line-height: 1.4;
@@ -1370,7 +1378,7 @@ figcaption {
   flex: 0 0 auto;
   align-items: center;
   gap: 8px;
-  color: #2f4760;
+  color: var(--graphite-dark);
   font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
@@ -1379,8 +1387,8 @@ figcaption {
 .open-model-legend i {
   width: 12px;
   height: 12px;
-  border: 1px solid #bfd0e0;
-  background: var(--green-soft);
+  border: 1px solid var(--graphite-line);
+  background: var(--graphite-soft);
 }
 
 .model-table-scroll {
@@ -1444,11 +1452,11 @@ figcaption {
 .model-table tbody tr.is-open > th[scope="row"],
 .model-table tbody tr.is-open > td,
 .model-table tbody tr.is-open > th[scope="rowgroup"] {
-  background: var(--green-soft);
+  background: var(--graphite-soft);
 }
 
 .model-table tbody tr.is-open > td:last-child {
-  color: var(--green);
+  color: var(--graphite-dark);
   font-weight: 750;
 }
 
@@ -1562,7 +1570,7 @@ figcaption {
 
 .case-kicker {
   margin-bottom: 7px;
-  color: var(--blue);
+  color: var(--red-dark);
   font-size: 12px;
   font-weight: 750;
   line-height: 1.4;
@@ -1675,12 +1683,18 @@ figcaption {
   position: absolute;
   top: 50%;
   right: 0;
-  color: var(--blue);
+  color: var(--graphite);
   content: "+";
   font-size: 20px;
   font-weight: 450;
   line-height: 1;
   transform: translateY(-50%);
+  transition: color 160ms ease;
+}
+
+.case-details summary:hover::after,
+.case-details summary:focus-visible::after {
+  color: var(--red-dark);
 }
 
 .case-details[open] summary {
@@ -1756,7 +1770,7 @@ figcaption {
   border: 0;
   border-radius: 0;
   background: transparent;
-  color: var(--blue);
+  color: var(--graphite);
   font-size: 12px;
   font-weight: 700;
   line-height: 1.35;
@@ -1786,7 +1800,7 @@ figcaption {
   max-width: 100%;
   margin: 12px 0 0;
   padding: 13px 15px;
-  border-left: 2px solid #b8cade;
+  border-left: 2px solid var(--graphite-line);
   background: var(--surface);
   color: #303a41;
   font-size: 12px;
@@ -1834,15 +1848,17 @@ figcaption {
   border: 1px solid var(--line-strong);
   border-radius: 6px;
   background: #ffffff;
-  color: var(--blue);
+  color: var(--graphite);
   cursor: pointer;
   font-size: 12px;
   font-weight: 700;
+  transition: border-color 160ms ease, color 160ms ease;
 }
 
 .citation-toolbar button:hover,
 .citation-toolbar button:focus-visible {
-  border-color: var(--blue);
+  border-color: var(--red-dark);
+  color: var(--red-dark);
 }
 
 .citation-copy-status {
@@ -1924,9 +1940,10 @@ figcaption {
 }
 
 .project-card > div span {
-  color: var(--blue);
+  color: var(--graphite);
   font-size: 18px;
   line-height: 1;
+  transition: color 160ms ease;
 }
 
 .project-card p {
@@ -1941,6 +1958,11 @@ figcaption {
   border-color: #aeb9c2;
   box-shadow: var(--shadow-soft);
   transform: translateY(-2px);
+}
+
+.project-card:hover > div span,
+.project-card:focus-visible > div span {
+  color: var(--red-dark);
 }
 
 .site-footer {
@@ -1971,9 +1993,15 @@ figcaption {
 
 .site-footer a {
   flex: 0 0 auto;
-  color: var(--blue);
+  color: var(--graphite);
   font-weight: 650;
   text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: var(--red-dark);
 }
 
 .back-to-top {
@@ -1996,7 +2024,8 @@ figcaption {
   opacity: 0;
   pointer-events: none;
   transform: translateY(8px);
-  transition: opacity 160ms ease, transform 160ms ease, border-color 160ms ease;
+  transition: opacity 160ms ease, transform 160ms ease, border-color 160ms ease,
+    color 160ms ease;
 }
 
 .back-to-top.is-visible {
@@ -2007,7 +2036,8 @@ figcaption {
 
 .back-to-top:hover,
 .back-to-top:focus-visible {
-  border-color: var(--blue);
+  border-color: var(--red-dark);
+  color: var(--red-dark);
 }
 
 .figure-lightbox {
