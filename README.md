@@ -143,12 +143,14 @@ pipeline, a scientific interaction framework, and a systematic training strategy
 
 <p align="center">
   <a href="https://ai4sgi.github.io/ExoMind/#results">
-    <img src="./docs/assets/fig8-benchmarks.png" alt="ExoMind performance across eight scientific benchmarks" width="100%">
+    <img src="./docs/assets/fig-model-comparison.png" alt="ExoMind performance compared with representative frontier models across eight scientific benchmarks" width="100%">
   </a>
 </p>
 
-See the [project-page evaluation explorer](https://ai4sgi.github.io/ExoMind/#results)
-for complete model comparisons, benchmark scope, and interactive rankings.
+ExoMind reaches an eight-benchmark average of **67.5**, compared with **54.2**
+for the next-best representative model shown above. See the [project-page
+evaluation explorer](https://ai4sgi.github.io/ExoMind/#results) for the complete
+model list, benchmark scope, evaluation settings, and interactive rankings.
 
 ## Citation
 
