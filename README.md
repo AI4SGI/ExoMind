@@ -10,16 +10,22 @@
 
 <p>
   <a href="https://ai4sgi.github.io/ExoMind/">
-    <img src="https://img.shields.io/badge/Project_Page-Visit-1f6feb?style=flat-square&logo=googlechrome&logoColor=white" alt="Project Page">
+    <img src="https://img.shields.io/badge/Project_Page-Visit-174F87?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Project Page">
   </a>
   <a href="./Paper.pdf">
-    <img src="https://img.shields.io/badge/Technical_Report-PDF-E34F26?style=flat-square&logo=adobeacrobatreader&logoColor=white" alt="Technical Report PDF">
+    <img src="https://img.shields.io/badge/Technical_Report-PDF-B31B1B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Technical Report PDF">
   </a>
-  <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/Code_License-Apache--2.0-f5de53?style=flat-square" alt="Code License: Apache-2.0">
+</p>
+<p>
+  <a href="https://huggingface.co/AI4SGI/ExoMind#exomind-democratizing-scientific-intelligence-via-extended-mind-inspired-agentic-system">
+    <img src="https://img.shields.io/badge/Hugging_Face-Model-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000000" alt="Hugging Face">
   </a>
-  <img src="https://img.shields.io/badge/Hugging_Face-Coming_Soon-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="Hugging Face Coming Soon">
-  <img src="https://img.shields.io/badge/ModelScope-Coming_Soon-624AFF?style=flat-square" alt="ModelScope Coming Soon">
+  <a href="https://github.com/AI4SGI/ExoMind">
+    <img src="https://img.shields.io/badge/GitHub-Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://modelscope.cn/models/AI4SGI/ExoMind">
+    <img src="https://img.shields.io/badge/ModelScope-Model-624AFF?style=for-the-badge" alt="ModelScope">
+  </a>
 </p>
 
 </div>
