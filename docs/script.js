@@ -866,6 +866,34 @@
     update();
   };
 
+  const enhanceDownloadStats = async () => {
+    const root = document.querySelector("#model-downloads");
+    const total = document.querySelector("#model-download-total");
+    if (!root || !total) return;
+
+    try {
+      const response = await fetch("download-stats.json", { cache: "no-store" });
+      if (!response.ok) throw new Error(`Download statistics request failed: ${response.status}`);
+      const payload = await response.json();
+      if (!Number.isSafeInteger(payload.total) || payload.total < 0) {
+        throw new Error("Download statistics contain an invalid total");
+      }
+
+      total.textContent = new Intl.NumberFormat("en-US").format(payload.total);
+      root.classList.remove("is-unavailable");
+      if (payload.updatedAt) {
+        const updated = new Date(payload.updatedAt);
+        if (!Number.isNaN(updated.getTime())) {
+          root.title = `Cumulative model-repository downloads across Hugging Face and ModelScope · Updated ${updated.toLocaleString()}`;
+        }
+      }
+    } catch (_error) {
+      total.textContent = "—";
+      root.classList.add("is-unavailable");
+      root.title = "Download statistics are temporarily unavailable";
+    }
+  };
+
   enhancePerformanceChart();
   renderBenchmarkExplorer();
   enhanceTabGroups();
@@ -875,4 +903,5 @@
   enhanceNavigation();
   enhanceReveal();
   enhanceBackToTop();
+  enhanceDownloadStats();
 })();

@@ -357,6 +357,57 @@ a.resource-link:focus-visible small {
   margin-left: 10px;
 }
 
+.download-stat {
+  display: inline-flex;
+  min-height: 58px;
+  align-items: center;
+  gap: 13px;
+  margin: 20px auto 0;
+  padding: 10px 18px 10px 15px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 9px 24px rgba(28, 38, 47, 0.06);
+  color: var(--graphite);
+}
+
+.download-stat-icon {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  fill: none;
+  stroke: var(--red-dark);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.download-stat-copy {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.download-stat-copy strong {
+  color: var(--red-dark);
+  font-size: 23px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 780;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.download-stat-copy span {
+  color: #4b535b;
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.download-stat.is-unavailable {
+  opacity: 0.74;
+}
+
 .result-spotlight {
   margin-top: 18px;
   padding: 68px 24px 72px;
@@ -2234,6 +2285,21 @@ figcaption {
 
   .resource-link {
     min-width: 0;
+  }
+
+  .download-stat {
+    min-height: 54px;
+    margin-top: 17px;
+  }
+
+  .download-stat-copy {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .download-stat-copy strong {
+    font-size: 21px;
   }
 
   .site-footer {

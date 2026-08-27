@@ -45,7 +45,7 @@ deep specialization at low cost.
 Built on Qwen3.5-35B-A3B, ExoMind achieves substantial and consistent
 improvements across scientific reasoning and research tasks using less data, a
 small model, and low-cost training. Its average score across eight scientific
-benchmarks increases from **36.2 to 67.5**, while it also improves over the base
+benchmarks increases from **36.2 to 68.3**, while it also improves over the base
 model on all six evaluated general-capability benchmarks.
 
 <p align="center">
@@ -148,7 +148,7 @@ pipeline, a scientific interaction framework, and a systematic training strategy
 ## Performance
 
 Under the technical report's evaluation setup, ExoMind reaches an
-eight-benchmark average of **67.5**, compared with **54.2** for the next-best
+eight-benchmark average of **68.3**, compared with **54.2** for the next-best
 representative model shown below.
 
 <p>
@@ -175,7 +175,7 @@ representative model shown below.
 </thead>
 <tbody>
 <tr><td colspan="9" align="left"><b>🧪 Scientific Research</b></td></tr>
-<tr><td align="left">HLE w/ tools</td><td align="center">50.9</td><td align="center">🥇 57.9</td><td align="center">52.2</td><td align="center">51.4</td><td align="center">56.0</td><td align="center">53.5</td><td align="center">54.7</td><td align="center">48.2</td></tr>
+<tr><td align="left">HLE w/ tools</td><td align="center">56.8</td><td align="center">🥇 57.9</td><td align="center">52.2</td><td align="center">51.4</td><td align="center">56.0</td><td align="center">53.5</td><td align="center">54.7</td><td align="center">48.2</td></tr>
 <tr><td align="left">FrontierScience-Research</td><td align="center">🥇 70.0</td><td align="center">26.7</td><td align="center">26.7</td><td align="center">11.7</td><td align="center">21.7</td><td align="center">10.0</td><td align="center">15.0</td><td align="center">13.3</td></tr>
 <tr><td align="left">CMT-Benchmark</td><td align="center">🥇 84.0</td><td align="center">46.0</td><td align="center">43.0</td><td align="center">43.0</td><td align="center">34.0</td><td align="center">34.0</td><td align="center">20.0</td><td align="center">28.0</td></tr>
 <tr><td align="left">CritPt</td><td align="center">25.7</td><td align="center">20.9</td><td align="center">🥇 27.1</td><td align="center">17.7</td><td align="center">23.4</td><td align="center">13.4</td><td align="center">20.9</td><td align="center">7.1</td></tr>
@@ -184,7 +184,7 @@ representative model shown below.
 <tr><td align="left">IMO-AnswerBench</td><td align="center">🥇 92.8</td><td align="center">86.8</td><td align="center">83.8</td><td align="center">90.0</td><td align="center">82.8</td><td align="center">90.0</td><td align="center">91.0</td><td align="center">89.8</td></tr>
 <tr><td align="left">HiPhO</td><td align="center">🥇 49.7</td><td align="center">46.4</td><td align="center">43.3</td><td align="center">43.4</td><td align="center">42.4</td><td align="center">38.8</td><td align="center">37.4</td><td align="center">38.7</td></tr>
 <tr><td align="left">FrontierScience-Olympiad</td><td align="center">🥇 89.0</td><td align="center">75.0</td><td align="center">78.0</td><td align="center">77.0</td><td align="center">69.0</td><td align="center">80.0</td><td align="center">76.5</td><td align="center">76.0</td></tr>
-<tr><td align="left"><b>Eight-benchmark average</b></td><td align="center">🥇 67.5</td><td align="center">54.2</td><td align="center">53.0</td><td align="center">49.7</td><td align="center">49.2</td><td align="center">47.1</td><td align="center">46.2</td><td align="center">46.1</td></tr>
+<tr><td align="left"><b>Eight-benchmark average</b></td><td align="center">🥇 68.3</td><td align="center">54.2</td><td align="center">53.0</td><td align="center">49.7</td><td align="center">49.2</td><td align="center">47.1</td><td align="center">46.2</td><td align="center">46.1</td></tr>
 </tbody>
 </table>
 

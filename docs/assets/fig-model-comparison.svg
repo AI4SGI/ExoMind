@@ -875,7 +875,7 @@ L 1560.24 17.712
     <text style="font-size: 15.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202631" x="58.608" y="133.952976" transform="rotate(-0 58.608 133.952976)">HLE w/ tools</text>
    </g>
    <g id="text_11">
-    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #174f87" x="426.888" y="134.20132" transform="rotate(-0 426.888 134.20132)">50.9</text>
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #174f87" x="426.888" y="134.20132" transform="rotate(-0 426.888 134.20132)">56.8</text>
    </g>
    <g id="text_12">
     <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202631" x="578.0016" y="134.20132" transform="rotate(-0 578.0016 134.20132)">57.9</text>
@@ -1091,7 +1091,7 @@ L 1560.24 17.712
     <text style="font-weight: 700; font-size: 15.3px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202631" x="58.608" y="550.797038" transform="rotate(-0 58.608 550.797038)">8-Benchmark Average</text>
    </g>
    <g id="text_83">
-    <text style="font-weight: 700; font-size: 17.2px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #174f87" x="426.888" y="551.381085" transform="rotate(-0 426.888 551.381085)">67.5</text>
+    <text style="font-weight: 700; font-size: 17.2px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #174f87" x="426.888" y="551.381085" transform="rotate(-0 426.888 551.381085)">68.3</text>
    </g>
    <g id="text_84">
     <text style="font-size: 17.2px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202631" x="578.0016" y="551.381085" transform="rotate(-0 578.0016 551.381085)">54.2</text>
