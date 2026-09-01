@@ -12,8 +12,8 @@
   <a href="https://ai4sgi.github.io/ExoMind/">
     <img src="https://img.shields.io/badge/Project_Page-Visit-174F87?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Project Page">
   </a>
-  <a href="./Paper.pdf">
-    <img src="https://img.shields.io/badge/Technical_Report-PDF-B31B1B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Technical Report PDF">
+  <a href="https://doi.org/10.20944/preprints202608.2038.v1">
+    <img src="https://img.shields.io/badge/Paper-Preprint-B31B1B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="ExoMind preprint">
   </a>
 </p>
 <p>
@@ -32,8 +32,9 @@
 
 ## 🔥 News
 
-- **2026-08-12**: 🔥 We release the ExoMind technical report, official project page,
-  and public repository.
+- **2026-08-28**: 🔥 The ExoMind preprint is now available on
+  [Preprints.org](https://doi.org/10.20944/preprints202608.2038.v1).
+- **2026-08-12**: We release the official project page and public repository.
 
 ## Overview
 
@@ -147,7 +148,7 @@ pipeline, a scientific interaction framework, and a systematic training strategy
 
 ## Performance
 
-Under the technical report's evaluation setup, ExoMind reaches an
+Under the preprint's evaluation setup, ExoMind reaches an
 eight-benchmark average of **68.3**, compared with **54.2** for the next-best
 representative model shown below.
 
@@ -194,15 +195,17 @@ benchmark scope, evaluation settings, and interactive rankings.
 
 ## Citation
 
-Please cite the ExoMind technical report as follows:
+Please cite the ExoMind preprint as follows:
 
 ```bibtex
-@misc{exomind2026,
-  title  = {ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System},
-  author = {Peng Ye and Zhuo Liu and Jingqi Ye and Fangchen Yu and Shengji Tang and Yichen Jiang and Haonan He and Zongsheng Cao and Tao Chen and Bo Zhang and Wanli Ouyang and Bowen Zhou and Lei Bai},
-  year   = {2026},
-  note   = {Technical report},
-  url    = {https://github.com/AI4SGI/ExoMind/blob/main/Paper.pdf}
+@article{Ye_2026,
+  title     = {ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System},
+  author    = {Ye, Peng and Liu, Zhuo and Ye, Jingqi and Yu, Fangchen and Tang, Shengji and Jiang, Yichen and He, Haonan and Cao, Zongsheng and Chen, Tao and Zhang, Bo and Ouyang, Wanli and Zhou, Bowen and Bai, Lei},
+  year      = {2026},
+  month     = aug,
+  publisher = {MDPI AG},
+  doi       = {10.20944/preprints202608.2038.v1},
+  url       = {https://doi.org/10.20944/preprints202608.2038.v1}
 }
 ```
 
@@ -212,7 +215,7 @@ ExoMind uses a split-license structure:
 
 - Software files expressly identified in the licensing overview are licensed
   under the [Apache License 2.0](./LICENSES/Apache-2.0.txt).
-- The technical report, paper content, scientific figures and results, and
+- The preprint and other paper content, scientific figures and results, and
   ExoMind brand assets are **not** licensed under Apache-2.0. They are subject to
   the [ExoMind Research Content and Brand Terms](./CONTENT_RIGHTS.md), which
   permit limited attributed, noncommercial sharing and promotion while

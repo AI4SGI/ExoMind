@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use ExoMind in your work, please cite the technical report below."
+message: "If you use ExoMind in your work, please cite the preprint below."
 title: "ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System"
 authors:
   - family-names: "Ye"
@@ -28,14 +28,15 @@ authors:
     given-names: "Wanli"
   - family-names: "Bai"
     given-names: "Lei"
-date-released: 2026-07-21
+date-released: 2026-08-28
+doi: "10.20944/preprints202608.2038.v1"
 repository-code: "https://github.com/AI4SGI/ExoMind"
 url: "https://ai4sgi.github.io/ExoMind/"
 abstract: >-
   ExoMind is an extended-mind-inspired agentic system for scientific reasoning
   and research.
 preferred-citation:
-  type: report
+  type: article
   title: "ExoMind: Democratizing Scientific Intelligence via Extended-Mind-Inspired Agentic System"
   authors:
     - family-names: "Ye"
@@ -65,4 +66,5 @@ preferred-citation:
     - family-names: "Bai"
       given-names: "Lei"
   year: 2026
-  url: "https://github.com/AI4SGI/ExoMind/blob/main/Paper.pdf"
+  doi: "10.20944/preprints202608.2038.v1"
+  url: "https://doi.org/10.20944/preprints202608.2038.v1"
