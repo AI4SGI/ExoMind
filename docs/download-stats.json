@@ -1,26 +1,26 @@
 {
   "components": {
-    "huggingFaceCommunity": 4466,
-    "huggingFaceOfficial": 1917,
+    "huggingFaceCommunity": 4508,
+    "huggingFaceOfficial": 2013,
     "modelScope": 72
   },
   "schemaVersion": 1,
   "sources": {
     "huggingFaceCommunity": {
-      "mradermacher/ExoMind-9B-GGUF": 437,
-      "mradermacher/ExoMind-9B-i1-GGUF": 860,
-      "mradermacher/ExoMind-GGUF": 830,
-      "mradermacher/ExoMind-i1-GGUF": 2339
+      "mradermacher/ExoMind-9B-GGUF": 439,
+      "mradermacher/ExoMind-9B-i1-GGUF": 864,
+      "mradermacher/ExoMind-GGUF": 853,
+      "mradermacher/ExoMind-i1-GGUF": 2352
     },
     "huggingFaceOfficial": {
-      "AI4SGI/ExoMind": 99,
+      "AI4SGI/ExoMind": 100,
       "AI4SGI/ExoMind-9B": 78,
-      "AI4SGI/ExoMind-9B-F16-GGUF": 348,
-      "AI4SGI/ExoMind-9B-Q4_K_M-GGUF": 357,
-      "AI4SGI/ExoMind-9B-Q8_0-GGUF": 341,
-      "AI4SGI/ExoMind-F16-GGUF": 21,
-      "AI4SGI/ExoMind-Q4_K_M-GGUF": 331,
-      "AI4SGI/ExoMind-Q8_0-GGUF": 342
+      "AI4SGI/ExoMind-9B-F16-GGUF": 364,
+      "AI4SGI/ExoMind-9B-Q4_K_M-GGUF": 391,
+      "AI4SGI/ExoMind-9B-Q8_0-GGUF": 353,
+      "AI4SGI/ExoMind-F16-GGUF": 22,
+      "AI4SGI/ExoMind-Q4_K_M-GGUF": 343,
+      "AI4SGI/ExoMind-Q8_0-GGUF": 362
     },
     "modelScope": {
       "AI4SGI/ExoMind": 34,
@@ -33,6 +33,6 @@
       "AI4SGI/ExoMind-Q8_0-GGUF": 4
     }
   },
-  "total": 6455,
-  "updatedAt": "2026-09-05T05:44:58Z"
+  "total": 6593,
+  "updatedAt": "2026-09-06T05:57:04Z"
 }
